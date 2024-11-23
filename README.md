@@ -10,10 +10,12 @@ University of Illinois at Urbana-Champaign
 
 ### Work Experience
 
-Graduate Reserach Assistant @ CLiMAS UIUC
-  - Cloud and rain microphysics
-  - Machine learning
-  - Open source
+Graduate Research Assistant @ CLiMAS-UIUC
+  - Investigate particle size distribution (PSD) retrievals using dual-frequency precipitation radar measurements.
+  - Improve warm cloud and rain microphysical models to reduce uncertainties in surface rainfall estimation.
+  - Develop frameworks integrating machine learning models with physical models for precipitation estimates.
+  - Work with large-scale datasets, such as Zarr datasets stored in S3 buckets, requiring optimized read and processing techniques.
+  - Use Python libraries like Xarray, xradar, and DataTree to organize, process, and visualize radar data hierarchically.
 
 Radar Meteorologist and Software Developer @ IDEAM (Colombian National Weather Services)
  - Weather data integration, manipulation, and product generator for early warnings nationwide 
