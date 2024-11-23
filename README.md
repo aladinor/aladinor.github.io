@@ -62,31 +62,31 @@ Radar Meteorologist and Software Developer @ IDEAM (Colombian National Weather S
 
  - **Leveraging FAIR principles for efficient management of meteorological radar data**  
   European Radar Conference – ERAD 2024. Poster presentation  
-  Rome, Italy.  
+  Rome, Italy.  09/24
 
 - **Leveraging FAIR principles for efficient management of meteorological radar data**  
   Scientific Python Conference – SciPy 2024. Poster presentation  
-  Tacoma, United States  
+  Tacoma, United States. 06/24
 
 - **Open science: reproducibility, access, data inclusion, codes, and methodologies used during scientific research to promote collaborative development and science at all levels of society.**  
   I Simposio de la Red de Investigadores de Ciencias Atmosféricas en Colombia AtmosCol-2023. Oral presentation.  
-  Armenia, Colombia.  
+  Armenia, Colombia.  11/23
 
 - **Co-Chair, Session 12B: Airborne and Spaceborne Radars III: Spaceborne Radar Observations and Emerging Platforms**  
   40th AMS Radar Conference  
-  Minneapolis, United States  
+  Minneapolis, United States. 08/23
 
 - **Assessment of the GPM rainfall retrieval algorithm using in-situ measurements.**  
   40th Conference on Radar Meteorology. Oral presentation  
-  Minneapolis, United States.  
+  Minneapolis, United States. 08/23
 
 - **Characterization of macrophysical characteristics of clouds and precipitation during the CAMP2EX field campaign.**  
   American Geophysical Union - Fall meeting. Poster  
-  New Orleans, United States.  
+  New Orleans, United States. 12/21
 
 - **Colombian National Weather Radar Network. Quantitative precipitation estimation advances.**  
   Hydrometeorological applications of weather radars. Second edition. Oral presentation  
-  Cartagena, Colombia.  
+  Cartagena, Colombia.  09/19
 
 - **Colombian National Weather Radar Network Evolution and Conformation. New challenges for a country highly affected by hydrometeorological events.**  
   IV Radarization and Early Warning Systems Symposium of the Southern Cone. Oral presentation  
