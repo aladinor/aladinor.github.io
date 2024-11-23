@@ -10,7 +10,7 @@ University of Illinois at Urbana-Champaign
 
 ### Work Experience
 
-Graduate Reserach Assistant @ CLiMAS UIUC
+Graduate Research Assistant @ CLiMAS-UIUC
   - Investigate particle size distribution (PSD) retrievals using dual-frequency precipitation radar measurements.
   - Improve warm cloud and rain microphysical models to reduce uncertainties in surface rainfall estimation.
   - Develop frameworks integrating machine learning models with physical models for precipitation estimates.
