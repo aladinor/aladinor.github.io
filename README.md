@@ -2,15 +2,14 @@
 
 ### Education
 
-- PhD (c) Climate, Meteorology, and Atmospheric Sciences  - 
-University of Illinois at Urbana-Champaign
+- PhD (c) Climate, Meteorology, and Atmospheric Sciences  - University of Illinois at Urbana-Champaign
 - MSc. Meteorology - Universidad Nacional de Colombia
 - Bs. Agricultural Engineering - Universidad Nacional de Colombia
 
 
 ### Work Experience
 
-Graduate Research Assistant @ CLiMAS-UIUC
+**Graduate Research Assistant @ CLiMAS-UIUC**
   - Investigate particle size distribution (PSD) retrievals using dual-frequency precipitation radar measurements.
   - Improve warm cloud and rain microphysical models to reduce uncertainties in surface rainfall estimation.
   - Develop frameworks integrating machine learning models with physical models for precipitation estimates.
@@ -20,7 +19,7 @@ Graduate Research Assistant @ CLiMAS-UIUC
   - Contribute to open-source Python projects like Xarray and xradar, advancing their utility in geoscience.
 
 
-Radar Meteorologist and Software Developer @ IDEAM (Colombian National Weather Services)
+**Radar Meteorologist and Software Developer @ IDEAM (Colombian National Weather Services)**
  - Weather data integration, manipulation, and product generator for early warnings nationwide 
  - Software developer for radar and satellite data visualization used by Colombian NWS across social media.
  - Multi-sensor quantitative precipitation estimation for societal applications 
