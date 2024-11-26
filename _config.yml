@@ -2,7 +2,3 @@ title: Alfonso Ladino-Rincon
 logo: assets/images/aladinor.png
 show_downloads: true
 theme: jekyll-theme-minimal
-sass:
-  style: compressed
-#include:
-#  - assets/css/style.css
