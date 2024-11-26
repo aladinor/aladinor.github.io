@@ -4,5 +4,5 @@ show_downloads: true
 theme: jekyll-theme-minimal
 sass:
   style: compressed
-include:
-  - assets/css/style.css
+#include:
+#  - assets/css/style.css
