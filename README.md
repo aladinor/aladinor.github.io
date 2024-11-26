@@ -53,7 +53,7 @@
 
  - Montanyà, J., López, J. A., Morales Rodriguez, C. A., van der Velde, O. A., Fabró, F., Pineda, N., Navarro-González, J., Reglero, V., Neubert, T., Chanrion, O., Goodman, S. J., Østgaard, N., **Ladino, A.**, Romero, D., Solà, G., Horta, R., & Freijó, M. (2021). A Simultaneous Observation of Lightning by ASIM, Colombia-Lightning Mapping Array, GLM, and ISS-LIS. Journal of Geophysical Research: Atmospheres, 126(6), e2020JD033735. https://doi.org/10.1029/2020JD033735 
 
- ### Conferences & Seminars
+### Conferences & Seminars
 
  - **Improvement of liquid particle size distribution retrieval from dual-precipitation radar measurement using a deep neural network**  
   European Radar Conference – ERAD 2024. Oral presentation.  
