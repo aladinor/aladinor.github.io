@@ -1,0 +1,20 @@
+# Projects Collection
+
+This directory contains research projects, software development, and collaborative initiatives.
+
+## Front Matter Template
+
+Each project should include:
+- title: Project title
+- date: Project start date (YYYY-MM-DD)
+- end_date: Project end date (optional)
+- status: active/completed/ongoing
+- funding: Funding source (if applicable)
+- collaborators: List of collaborators
+- github_url: Repository link
+- website_url: Project website
+- tags: Keywords
+- description: Project overview
+
+## Example filename format:
+project-short-name.md

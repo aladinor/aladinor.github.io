@@ -1,0 +1,80 @@
+---
+layout: home
+title: Alfonso Ladino-Rincon
+description: Atmospheric Scientist specializing in cloud physics, numerical modeling, and open science workflows
+---
+
+<!-- Additional content can be added here if needed for the homepage -->
+<!-- The home layout will handle all the main content sections -->
+
+<!-- This section could include any additional dynamic content or announcements -->
+{% if site.data.announcements %}
+<section class="announcements">
+    <div class="container">
+        <h2 class="section-title">Latest News</h2>
+        <div class="announcements-list">
+            {% for announcement in site.data.announcements limit:3 %}
+                <article class="announcement-item">
+                    <time class="announcement-date">{{ announcement.date | date: "%B %d, %Y" }}</time>
+                    <h3><a href="{{ announcement.url | relative_url }}">{{ announcement.title }}</a></h3>
+                    <p>{{ announcement.excerpt }}</p>
+                </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<style>
+.announcements {
+    padding: var(--space-20) 0;
+    background-color: var(--color-background);
+}
+
+.announcements-list {
+    display: grid;
+    gap: var(--space-6);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.announcement-item {
+    background-color: var(--color-background-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.announcement-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.announcement-date {
+    display: block;
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-2);
+}
+
+.announcement-item h3 {
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-lg);
+}
+
+.announcement-item h3 a {
+    color: var(--color-primary);
+    
+    &:hover {
+        color: var(--color-secondary);
+    }
+}
+
+.announcement-item p {
+    color: var(--color-text-light);
+    margin: 0;
+}
+</style>

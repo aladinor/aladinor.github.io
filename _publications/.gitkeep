@@ -1,0 +1,20 @@
+# Publications Collection
+
+This directory contains research publications, papers, and articles.
+
+## Front Matter Template
+
+Each publication should include:
+- title: Publication title
+- date: Publication date (YYYY-MM-DD)
+- journal: Journal or venue name
+- authors: List of authors
+- doi: Digital Object Identifier
+- url: Link to publication
+- categories: Research areas
+- tags: Keywords
+- abstract: Brief summary
+- status: published/submitted/in-review
+
+## Example filename format:
+YYYY-MM-DD-short-title.md

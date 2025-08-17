@@ -1,0 +1,421 @@
+---
+layout: default
+---
+
+<article class="publication">
+    <header class="publication-header">
+        <div class="container">
+            <h1 class="publication-title">{{ page.title }}</h1>
+            
+            <div class="publication-meta">
+                {% if page.authors %}
+                    <div class="publication-authors">
+                        <i class="fas fa-users"></i>
+                        <span>{{ page.authors }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.journal %}
+                    <div class="publication-journal">
+                        <i class="fas fa-book"></i>
+                        <span>{{ page.journal }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.date %}
+                    <div class="publication-date">
+                        <i class="fas fa-calendar"></i>
+                        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %Y" }}</time>
+                    </div>
+                {% endif %}
+                
+                {% if page.volume or page.pages %}
+                    <div class="publication-details">
+                        <i class="fas fa-file-alt"></i>
+                        <span>
+                            {% if page.volume %}Vol. {{ page.volume }}{% endif %}
+                            {% if page.issue %}, No. {{ page.issue }}{% endif %}
+                            {% if page.pages %}, pp. {{ page.pages }}{% endif %}
+                        </span>
+                    </div>
+                {% endif %}
+            </div>
+            
+            {% if page.tags.size > 0 %}
+                <div class="publication-tags">
+                    {% for tag in page.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="publication-content">
+        <div class="container">
+            <div class="publication-grid">
+                <!-- Main Content -->
+                <div class="publication-main">
+                    {% if page.abstract %}
+                        <section class="publication-abstract">
+                            <h2>Abstract</h2>
+                            <div class="abstract-content">
+                                {{ page.abstract | markdownify }}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if content and content != empty %}
+                        <section class="publication-body">
+                            {{ content }}
+                        </section>
+                    {% endif %}
+
+                    {% if page.keywords %}
+                        <section class="publication-keywords">
+                            <h3>Keywords</h3>
+                            <div class="keywords-list">
+                                {% for keyword in page.keywords %}
+                                    <span class="keyword">{{ keyword }}</span>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if page.citation %}
+                        <section class="publication-citation">
+                            <h3>Citation</h3>
+                            <div class="citation-box">
+                                <pre><code>{{ page.citation }}</code></pre>
+                                <button class="copy-citation" data-citation="{{ page.citation | escape }}">
+                                    <i class="fas fa-copy"></i> Copy Citation
+                                </button>
+                            </div>
+                        </section>
+                    {% endif %}
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="publication-sidebar">
+                    <div class="publication-actions">
+                        <h3>Access</h3>
+                        <div class="action-buttons">
+                            {% if page.doi %}
+                                <a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Publication
+                                </a>
+                            {% elsif page.url_external %}
+                                <a href="{{ page.url_external }}" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Publication
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.pdf %}
+                                <a href="{{ page.pdf | relative_url }}" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Download PDF
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.preprint %}
+                                <a href="{{ page.preprint }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-file-alt"></i>
+                                    Preprint
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.code %}
+                                <a href="{{ page.code }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.data %}
+                                <a href="{{ page.data }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-database"></i>
+                                    Data
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if page.metrics %}
+                        <div class="publication-metrics">
+                            <h3>Metrics</h3>
+                            <div class="metrics-list">
+                                {% if page.metrics.citations %}
+                                    <div class="metric-item">
+                                        <span class="metric-label">Citations:</span>
+                                        <span class="metric-value">{{ page.metrics.citations }}</span>
+                                    </div>
+                                {% endif %}
+                                {% if page.metrics.altmetric %}
+                                    <div class="metric-item">
+                                        <span class="metric-label">Altmetric:</span>
+                                        <span class="metric-value">{{ page.metrics.altmetric }}</span>
+                                    </div>
+                                {% endif %}
+                                {% if page.metrics.downloads %}
+                                    <div class="metric-item">
+                                        <span class="metric-label">Downloads:</span>
+                                        <span class="metric-value">{{ page.metrics.downloads }}</span>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    {% if page.related_projects %}
+                        <div class="related-projects">
+                            <h3>Related Projects</h3>
+                            <ul class="related-list">
+                                {% for project_slug in page.related_projects %}
+                                    {% assign project = site.projects | where: "slug", project_slug | first %}
+                                    {% if project %}
+                                        <li>
+                                            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="publication-footer">
+        <div class="container">
+            <div class="publication-navigation">
+                {% assign publications = site.publications | sort: 'date' | reverse %}
+                {% assign current_index = publications | map: 'url' | find: page.url %}
+                {% assign current_pos = forloop.index0 %}
+                
+                {% if current_pos > 0 %}
+                    {% assign prev_pub = publications[current_pos - 1] %}
+                    <div class="nav-previous">
+                        <a href="{{ prev_pub.url | relative_url }}" rel="prev">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>{{ prev_pub.title | truncate: 50 }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+                
+                {% assign next_pos = current_pos | plus: 1 %}
+                {% if next_pos < publications.size %}
+                    {% assign next_pub = publications[next_pos] %}
+                    <div class="nav-next">
+                        <a href="{{ next_pub.url | relative_url }}" rel="next">
+                            <span>{{ next_pub.title | truncate: 50 }}</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="publication-share">
+                <h4>Share this publication</h4>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}" target="_blank" class="share-button twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | uri_escape }}" target="_blank" class="share-button linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}" class="share-button email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</article>
+
+<style>
+.publication-header {
+    padding: var(--space-16) 0 var(--space-8) 0;
+    background-color: var(--color-background-alt);
+}
+
+.publication-title {
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+.publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+    margin-bottom: var(--space-6);
+}
+
+.publication-meta > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+.publication-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+}
+
+.publication-content {
+    padding: var(--space-12) 0;
+}
+
+.publication-grid {
+    display: grid;
+    gap: var(--space-8);
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-12);
+    }
+}
+
+.publication-abstract {
+    margin-bottom: var(--space-8);
+}
+
+.abstract-content {
+    background-color: var(--color-background-alt);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-secondary);
+}
+
+.publication-sidebar {
+    @media (min-width: 1024px) {
+        position: sticky;
+        top: calc(var(--space-20) + 60px);
+        max-height: calc(100vh - var(--space-24));
+        overflow-y: auto;
+    }
+}
+
+.publication-actions,
+.publication-metrics,
+.related-projects {
+    background-color: var(--color-background-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-6);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.citation-box {
+    position: relative;
+    background-color: var(--color-background-alt);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+}
+
+.copy-citation {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    border: none;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.copy-citation:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.keyword {
+    display: inline-block;
+    padding: var(--space-1) var(--space-2);
+    background-color: var(--color-background-alt);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    border-radius: var(--radius-sm);
+}
+
+.metrics-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.metric-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metric-label {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+.metric-value {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-secondary);
+}
+
+.related-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-list li {
+    margin-bottom: var(--space-2);
+}
+
+.related-list a {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+}
+
+.related-list a:hover {
+    color: var(--color-secondary);
+}
+
+.publication-footer {
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.publication-navigation {
+    display: grid;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.publication-share {
+    text-align: center;
+}
+</style>

@@ -1,0 +1,23 @@
+# Datasets Collection
+
+This directory contains open science datasets and data products.
+
+## Front Matter Template
+
+Each dataset should include:
+- title: Dataset title
+- date: Release date (YYYY-MM-DD)
+- version: Dataset version
+- doi: Digital Object Identifier
+- repository_url: Data repository link
+- size: Dataset size
+- format: Data format (NetCDF, CSV, etc.)
+- license: Data license
+- related_publication: Associated paper
+- description: Dataset overview
+- variables: List of variables
+- temporal_coverage: Time period covered
+- spatial_coverage: Geographic coverage
+
+## Example filename format:
+dataset-short-name.md

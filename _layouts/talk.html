@@ -1,0 +1,540 @@
+---
+layout: default
+---
+
+<article class="talk">
+    <header class="talk-header">
+        <div class="container">
+            <h1 class="talk-title">{{ page.title }}</h1>
+            
+            <div class="talk-meta">
+                {% if page.venue %}
+                    <div class="talk-venue">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>{{ page.venue }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.location %}
+                    <div class="talk-location">
+                        <i class="fas fa-globe"></i>
+                        <span>{{ page.location }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.date %}
+                    <div class="talk-date">
+                        <i class="fas fa-calendar"></i>
+                        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                    </div>
+                {% endif %}
+                
+                {% if page.talk_type %}
+                    <div class="talk-type">
+                        <i class="fas fa-microphone"></i>
+                        <span class="talk-type-badge">{{ page.talk_type }}</span>
+                    </div>
+                {% endif %}
+            </div>
+            
+            {% if page.tags.size > 0 %}
+                <div class="talk-tags">
+                    {% for tag in page.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="talk-content">
+        <div class="container">
+            <div class="talk-grid">
+                <!-- Main Content -->
+                <div class="talk-main">
+                    {% if page.abstract %}
+                        <section class="talk-abstract">
+                            <h2>Abstract</h2>
+                            <div class="abstract-content">
+                                {{ page.abstract | markdownify }}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if content and content != empty %}
+                        <section class="talk-body">
+                            {{ content }}
+                        </section>
+                    {% endif %}
+
+                    {% if page.highlights %}
+                        <section class="talk-highlights">
+                            <h3>Key Highlights</h3>
+                            <ul class="highlights-list">
+                                {% for highlight in page.highlights %}
+                                    <li>{{ highlight }}</li>
+                                {% endfor %}
+                            </ul>
+                        </section>
+                    {% endif %}
+
+                    {% if page.slides or page.video or page.audio %}
+                        <section class="talk-media">
+                            <h3>Presentation Materials</h3>
+                            <div class="media-grid">
+                                {% if page.video %}
+                                    <div class="media-item">
+                                        <h4><i class="fas fa-video"></i> Video Recording</h4>
+                                        {% if page.video contains 'youtube.com' or page.video contains 'youtu.be' %}
+                                            {% assign video_id = page.video | split: '/' | last | split: '=' | last | split: '&' | first %}
+                                            <div class="video-embed">
+                                                <iframe src="https://www.youtube.com/embed/{{ video_id }}" 
+                                                        title="{{ page.title }} - Video Recording"
+                                                        frameborder="0" 
+                                                        allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        {% else %}
+                                            <a href="{{ page.video }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                Watch Video
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+
+                                {% if page.slides %}
+                                    <div class="media-item">
+                                        <h4><i class="fas fa-presentation"></i> Slides</h4>
+                                        {% if page.slides contains 'speakerdeck.com' or page.slides contains 'slideshare.net' %}
+                                            <a href="{{ page.slides }}" target="_blank" rel="noopener" class="btn btn-primary">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                View Slides
+                                            </a>
+                                        {% else %}
+                                            <a href="{{ page.slides | relative_url }}" target="_blank" class="btn btn-primary">
+                                                <i class="fas fa-download"></i>
+                                                Download Slides
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+
+                                {% if page.audio %}
+                                    <div class="media-item">
+                                        <h4><i class="fas fa-volume-up"></i> Audio Recording</h4>
+                                        <a href="{{ page.audio }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Listen to Audio
+                                        </a>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </section>
+                    {% endif %}
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="talk-sidebar">
+                    <div class="talk-details">
+                        <h3>Event Details</h3>
+                        <div class="details-list">
+                            {% if page.conference %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Conference:</span>
+                                    <span class="detail-value">{{ page.conference }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.session %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Session:</span>
+                                    <span class="detail-value">{{ page.session }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.time %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Time:</span>
+                                    <span class="detail-value">{{ page.time }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.duration %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Duration:</span>
+                                    <span class="detail-value">{{ page.duration }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.audience %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Audience:</span>
+                                    <span class="detail-value">{{ page.audience }}</span>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="talk-actions">
+                        <h3>Resources</h3>
+                        <div class="action-buttons">
+                            {% if page.event_url %}
+                                <a href="{{ page.event_url }}" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Event Page
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.slides %}
+                                <a href="{{ page.slides | relative_url }}" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-presentation"></i>
+                                    Download Slides
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.code %}
+                                <a href="{{ page.code }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code Repository
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.poster %}
+                                <a href="{{ page.poster | relative_url }}" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-image"></i>
+                                    View Poster
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if page.collaborators %}
+                        <div class="talk-collaborators">
+                            <h3>Collaborators</h3>
+                            <ul class="collaborators-list">
+                                {% for collaborator in page.collaborators %}
+                                    <li>
+                                        {% if collaborator.url %}
+                                            <a href="{{ collaborator.url }}" target="_blank" rel="noopener">{{ collaborator.name }}</a>
+                                        {% else %}
+                                            {{ collaborator.name }}
+                                        {% endif %}
+                                        {% if collaborator.affiliation %}
+                                            <small>({{ collaborator.affiliation }})</small>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+
+                    {% if page.related_publications %}
+                        <div class="related-publications">
+                            <h3>Related Publications</h3>
+                            <ul class="related-list">
+                                {% for pub_slug in page.related_publications %}
+                                    {% assign publication = site.publications | where: "slug", pub_slug | first %}
+                                    {% if publication %}
+                                        <li>
+                                            <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="talk-footer">
+        <div class="container">
+            <div class="talk-navigation">
+                {% assign talks = site.talks | sort: 'date' | reverse %}
+                {% for talk in talks %}
+                    {% if talk.url == page.url %}
+                        {% assign current_index = forloop.index0 %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% if current_index > 0 %}
+                    {% assign prev_talk = talks[current_index | minus: 1] %}
+                    <div class="nav-previous">
+                        <a href="{{ prev_talk.url | relative_url }}" rel="prev">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>{{ prev_talk.title | truncate: 50 }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+                
+                {% assign next_index = current_index | plus: 1 %}
+                {% if next_index < talks.size %}
+                    {% assign next_talk = talks[next_index] %}
+                    <div class="nav-next">
+                        <a href="{{ next_talk.url | relative_url }}" rel="next">
+                            <span>{{ next_talk.title | truncate: 50 }}</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="talk-share">
+                <h4>Share this talk</h4>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}" target="_blank" class="share-button twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | uri_escape }}" target="_blank" class="share-button linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}" class="share-button email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</article>
+
+<style>
+.talk-header {
+    padding: var(--space-16) 0 var(--space-8) 0;
+    background: linear-gradient(135deg, var(--color-background-alt) 0%, var(--color-background) 100%);
+}
+
+.talk-title {
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+.talk-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+    margin-bottom: var(--space-6);
+}
+
+.talk-meta > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+.talk-type-badge {
+    padding: var(--space-1) var(--space-3);
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: var(--radius-full);
+}
+
+.talk-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+}
+
+.talk-content {
+    padding: var(--space-12) 0;
+}
+
+.talk-grid {
+    display: grid;
+    gap: var(--space-8);
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-12);
+    }
+}
+
+.talk-abstract {
+    margin-bottom: var(--space-8);
+}
+
+.abstract-content {
+    background-color: var(--color-background-alt);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-accent);
+}
+
+.talk-highlights {
+    margin-bottom: var(--space-8);
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights-list li {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-3);
+    line-height: var(--line-height-relaxed);
+}
+
+.highlights-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: var(--font-weight-bold);
+}
+
+.talk-media {
+    margin-bottom: var(--space-8);
+}
+
+.media-grid {
+    display: grid;
+    gap: var(--space-6);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.media-item {
+    background-color: var(--color-background-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.media-item h4 {
+    margin-bottom: var(--space-4);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.talk-sidebar {
+    @media (min-width: 1024px) {
+        position: sticky;
+        top: calc(var(--space-20) + 60px);
+        max-height: calc(100vh - var(--space-24));
+        overflow-y: auto;
+    }
+}
+
+.talk-details,
+.talk-actions,
+.talk-collaborators,
+.related-publications {
+    background-color: var(--color-background-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-6);
+}
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.detail-label {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.detail-value {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.collaborators-list,
+.related-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collaborators-list li,
+.related-list li {
+    margin-bottom: var(--space-2);
+}
+
+.collaborators-list a,
+.related-list a {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+}
+
+.collaborators-list a:hover,
+.related-list a:hover {
+    color: var(--color-secondary);
+}
+
+.collaborators-list small {
+    display: block;
+    color: var(--color-text-light);
+    font-size: var(--font-size-xs);
+    margin-top: var(--space-1);
+}
+
+.talk-footer {
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.talk-navigation {
+    display: grid;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.talk-share {
+    text-align: center;
+}
+</style>

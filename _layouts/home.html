@@ -1,0 +1,128 @@
+---
+layout: default
+---
+
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">{{ site.title }}</h1>
+                <p class="hero-subtitle">{{ site.description }}</p>
+                <div class="hero-highlights">
+                    {% for interest in site.academic.research_interests limit:3 %}
+                        <span class="research-tag">{{ interest }}</span>
+                    {% endfor %}
+                </div>
+                <div class="hero-cta">
+                    <a href="#research" class="btn btn-primary">Explore Research</a>
+                    <a href="{{ '/about/' | relative_url }}" class="btn btn-outline">About Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ site.logo | relative_url }}" alt="{{ site.author }}" class="profile-photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="research" class="research-highlights">
+    <div class="container">
+        <h2 class="section-title">Research Highlights</h2>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <i class="fas fa-cloud-rain highlight-icon"></i>
+                <h3>Cloud Physics & Precipitation</h3>
+                <p>Investigating particle size distribution retrievals using dual-frequency precipitation radar measurements and machine learning approaches.</p>
+                <a href="{{ '/research/' | relative_url }}" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-satellite highlight-icon"></i>
+                <h3>Remote Sensing & Radar</h3>
+                <p>Developing frameworks for radar meteorology and contributing to open-source Python projects like Xarray and xradar.</p>
+                <a href="{{ '/projects/' | relative_url }}" class="card-link">View Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-database highlight-icon"></i>
+                <h3>Open Science & FAIR Data</h3>
+                <p>Creating Analysis-Ready Cloud-Optimized (ARCO) datasets and promoting open science workflows in atmospheric research.</p>
+                <a href="{{ '/datasets/' | relative_url }}" class="card-link">Explore Data <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="recent-activity">
+    <div class="container">
+        <h2 class="section-title">Recent Activity</h2>
+        <div class="activity-grid">
+            <div class="activity-column">
+                <h3 class="activity-subtitle">Latest Publications</h3>
+                {% assign recent_pubs = site.publications | sort: 'date' | reverse | limit: 3 %}
+                {% if recent_pubs.size > 0 %}
+                    <div class="activity-list">
+                        {% for pub in recent_pubs %}
+                            <article class="activity-item">
+                                <h4><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h4>
+                                <p class="activity-meta">{{ pub.journal }} • {{ pub.date | date: "%Y" }}</p>
+                            </article>
+                        {% endfor %}
+                    </div>
+                    <a href="{{ '/publications/' | relative_url }}" class="view-all-link">View All Publications <i class="fas fa-arrow-right"></i></a>
+                {% else %}
+                    <p class="activity-placeholder">Publications will appear here once added to the collections.</p>
+                {% endif %}
+            </div>
+            
+            <div class="activity-column">
+                <h3 class="activity-subtitle">Recent Talks</h3>
+                {% assign recent_talks = site.talks | sort: 'date' | reverse | limit: 3 %}
+                {% if recent_talks.size > 0 %}
+                    <div class="activity-list">
+                        {% for talk in recent_talks %}
+                            <article class="activity-item">
+                                <h4><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h4>
+                                <p class="activity-meta">{{ talk.venue }} • {{ talk.date | date: "%b %Y" }}</p>
+                            </article>
+                        {% endfor %}
+                    </div>
+                    <a href="{{ '/talks/' | relative_url }}" class="view-all-link">View All Talks <i class="fas fa-arrow-right"></i></a>
+                {% else %}
+                    <p class="activity-placeholder">Recent talks will appear here once added to the collections.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-work">
+    <div class="container">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="featured-grid">
+            {% assign featured_projects = site.projects | where: "featured", true | limit: 2 %}
+            {% if featured_projects.size > 0 %}
+                {% for project in featured_projects %}
+                    <div class="featured-card">
+                        {% if project.image %}
+                            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="featured-image">
+                        {% endif %}
+                        <div class="featured-content">
+                            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+                            <p>{{ project.excerpt | strip_html | truncatewords: 25 }}</p>
+                            <div class="featured-tags">
+                                {% for tag in project.tags limit:3 %}
+                                    <span class="tag">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="featured-placeholder">
+                    <p>Featured projects will appear here. Add projects with <code>featured: true</code> in their front matter.</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{{ content }}

@@ -1,0 +1,17 @@
+# Posts Collection
+
+This directory contains blog posts, research updates, and articles.
+
+## Front Matter Template
+
+Each post should include:
+- title: Post title
+- date: Publication date (YYYY-MM-DD)
+- categories: Main categories
+- tags: Keywords
+- excerpt: Brief summary
+- author: Author name (defaults to site author)
+- featured_image: Header image (optional)
+
+## Example filename format:
+YYYY-MM-DD-post-title.md

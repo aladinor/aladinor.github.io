@@ -1,0 +1,649 @@
+---
+layout: default
+---
+
+<article class="project">
+    <header class="project-header">
+        <div class="container">
+            {% if page.image %}
+                <div class="project-hero-image">
+                    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="hero-image">
+                </div>
+            {% endif %}
+            
+            <h1 class="project-title">{{ page.title }}</h1>
+            
+            {% if page.subtitle %}
+                <p class="project-subtitle">{{ page.subtitle }}</p>
+            {% endif %}
+            
+            <div class="project-meta">
+                {% if page.status %}
+                    <div class="project-status">
+                        <i class="fas fa-circle status-{{ page.status | downcase }}"></i>
+                        <span>{{ page.status }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.start_date %}
+                    <div class="project-date">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Started {{ page.start_date | date: "%B %Y" }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.end_date %}
+                    <div class="project-date">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Completed {{ page.end_date | date: "%B %Y" }}</span>
+                    </div>
+                {% endif %}
+                
+                {% if page.duration %}
+                    <div class="project-duration">
+                        <i class="fas fa-clock"></i>
+                        <span>{{ page.duration }}</span>
+                    </div>
+                {% endif %}
+            </div>
+            
+            {% if page.tags.size > 0 %}
+                <div class="project-tags">
+                    {% for tag in page.tags %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <!-- Main Content -->
+                <div class="project-main">
+                    {% if page.overview %}
+                        <section class="project-overview">
+                            <h2>Overview</h2>
+                            <div class="overview-content">
+                                {{ page.overview | markdownify }}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if content and content != empty %}
+                        <section class="project-body">
+                            {{ content }}
+                        </section>
+                    {% endif %}
+
+                    {% if page.objectives %}
+                        <section class="project-objectives">
+                            <h3>Objectives</h3>
+                            <ul class="objectives-list">
+                                {% for objective in page.objectives %}
+                                    <li>{{ objective }}</li>
+                                {% endfor %}
+                            </ul>
+                        </section>
+                    {% endif %}
+
+                    {% if page.methodology %}
+                        <section class="project-methodology">
+                            <h3>Methodology</h3>
+                            <div class="methodology-content">
+                                {{ page.methodology | markdownify }}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if page.results %}
+                        <section class="project-results">
+                            <h3>Key Results</h3>
+                            <div class="results-content">
+                                {{ page.results | markdownify }}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if page.impact %}
+                        <section class="project-impact">
+                            <h3>Impact & Outcomes</h3>
+                            <div class="impact-content">
+                                {{ page.impact | markdownify }}
+                            </div>
+                        </section>
+                    {% endif %}
+
+                    {% if page.gallery %}
+                        <section class="project-gallery">
+                            <h3>Gallery</h3>
+                            <div class="gallery-grid">
+                                {% for image in page.gallery %}
+                                    <figure class="gallery-item">
+                                        <img src="{{ image.url | relative_url }}" alt="{{ image.caption | default: page.title }}" class="gallery-image">
+                                        {% if image.caption %}
+                                            <figcaption>{{ image.caption }}</figcaption>
+                                        {% endif %}
+                                    </figure>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    {% endif %}
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="project-sidebar">
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <div class="details-list">
+                            {% if page.category %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Category:</span>
+                                    <span class="detail-value">{{ page.category }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.funding %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Funding:</span>
+                                    <span class="detail-value">{{ page.funding }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.institution %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Institution:</span>
+                                    <span class="detail-value">{{ page.institution }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.role %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Role:</span>
+                                    <span class="detail-value">{{ page.role }}</span>
+                                </div>
+                            {% endif %}
+                            
+                            {% if page.tools %}
+                                <div class="detail-item">
+                                    <span class="detail-label">Tools & Technologies:</span>
+                                    <div class="tools-list">
+                                        {% for tool in page.tools %}
+                                            <span class="tool-tag">{{ tool }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <h3>Resources</h3>
+                        <div class="action-buttons">
+                            {% if page.github %}
+                                <a href="{{ page.github }}" target="_blank" rel="noopener" class="btn btn-primary">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.demo %}
+                                <a href="{{ page.demo }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.documentation %}
+                                <a href="{{ page.documentation }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-book"></i>
+                                    Documentation
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.paper %}
+                                <a href="{{ page.paper }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-file-alt"></i>
+                                    Research Paper
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.data %}
+                                <a href="{{ page.data }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-database"></i>
+                                    Dataset
+                                </a>
+                            {% endif %}
+                            
+                            {% if page.presentation %}
+                                <a href="{{ page.presentation }}" target="_blank" rel="noopener" class="btn btn-outline">
+                                    <i class="fas fa-presentation"></i>
+                                    Presentation
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    {% if page.team %}
+                        <div class="project-team">
+                            <h3>Team Members</h3>
+                            <ul class="team-list">
+                                {% for member in page.team %}
+                                    <li class="team-member">
+                                        {% if member.url %}
+                                            <a href="{{ member.url }}" target="_blank" rel="noopener">{{ member.name }}</a>
+                                        {% else %}
+                                            <span class="member-name">{{ member.name }}</span>
+                                        {% endif %}
+                                        {% if member.role %}
+                                            <small class="member-role">{{ member.role }}</small>
+                                        {% endif %}
+                                        {% if member.affiliation %}
+                                            <small class="member-affiliation">{{ member.affiliation }}</small>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+
+                    {% if page.related_publications %}
+                        <div class="related-publications">
+                            <h3>Related Publications</h3>
+                            <ul class="related-list">
+                                {% for pub_slug in page.related_publications %}
+                                    {% assign publication = site.publications | where: "slug", pub_slug | first %}
+                                    {% if publication %}
+                                        <li>
+                                            <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+                                            {% if publication.date %}
+                                                <small>({{ publication.date | date: "%Y" }})</small>
+                                            {% endif %}
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+
+                    {% if page.related_talks %}
+                        <div class="related-talks">
+                            <h3>Related Talks</h3>
+                            <ul class="related-list">
+                                {% for talk_slug in page.related_talks %}
+                                    {% assign talk = site.talks | where: "slug", talk_slug | first %}
+                                    {% if talk %}
+                                        <li>
+                                            <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
+                                            {% if talk.date %}
+                                                <small>({{ talk.date | date: "%Y" }})</small>
+                                            {% endif %}
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="project-footer">
+        <div class="container">
+            <div class="project-navigation">
+                {% assign projects = site.projects | sort: 'date' | reverse %}
+                {% for project in projects %}
+                    {% if project.url == page.url %}
+                        {% assign current_index = forloop.index0 %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% if current_index > 0 %}
+                    {% assign prev_project = projects[current_index | minus: 1] %}
+                    <div class="nav-previous">
+                        <a href="{{ prev_project.url | relative_url }}" rel="prev">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>{{ prev_project.title | truncate: 50 }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+                
+                {% assign next_index = current_index | plus: 1 %}
+                {% if next_index < projects.size %}
+                    {% assign next_project = projects[next_index] %}
+                    <div class="nav-next">
+                        <a href="{{ next_project.url | relative_url }}" rel="next">
+                            <span>{{ next_project.title | truncate: 50 }}</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="project-share">
+                <h4>Share this project</h4>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}" target="_blank" class="share-button twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | uri_escape }}" target="_blank" class="share-button linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}" class="share-button email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</article>
+
+<style>
+.project-header {
+    padding: var(--space-16) 0 var(--space-8) 0;
+    background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+    text-align: center;
+}
+
+.project-hero-image {
+    margin-bottom: var(--space-8);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.project-title {
+    margin-bottom: var(--space-4);
+}
+
+.project-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-light);
+    margin-bottom: var(--space-6);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    justify-content: center;
+    margin-bottom: var(--space-6);
+}
+
+.project-meta > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+.project-status .fas {
+    font-size: var(--font-size-xs);
+}
+
+.status-active,
+.status-ongoing {
+    color: var(--color-accent);
+}
+
+.status-completed {
+    color: var(--color-success);
+}
+
+.status-paused {
+    color: var(--color-warning);
+}
+
+.status-archived {
+    color: var(--color-text-muted);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+}
+
+.project-content {
+    padding: var(--space-12) 0;
+}
+
+.project-grid {
+    display: grid;
+    gap: var(--space-8);
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-12);
+    }
+}
+
+.project-overview {
+    margin-bottom: var(--space-8);
+}
+
+.overview-content {
+    background-color: var(--color-background-alt);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-primary);
+}
+
+.objectives-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.objectives-list li {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-3);
+    line-height: var(--line-height-relaxed);
+}
+
+.objectives-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-bold);
+}
+
+.project-methodology,
+.project-results,
+.project-impact {
+    margin-bottom: var(--space-8);
+}
+
+.project-gallery {
+    margin-bottom: var(--space-8);
+}
+
+.gallery-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery-item {
+    margin: 0;
+    background-color: var(--color-background-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover {
+    transform: translateY(-2px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    padding: var(--space-3);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    text-align: center;
+}
+
+.project-sidebar {
+    @media (min-width: 1024px) {
+        position: sticky;
+        top: calc(var(--space-20) + 60px);
+        max-height: calc(100vh - var(--space-24));
+        overflow-y: auto;
+    }
+}
+
+.project-details,
+.project-actions,
+.project-team,
+.related-publications,
+.related-talks {
+    background-color: var(--color-background-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-6);
+}
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.detail-label {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.detail-value {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+}
+
+.tool-tag {
+    display: inline-block;
+    padding: var(--space-1) var(--space-2);
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--radius-sm);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-member {
+    margin-bottom: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.member-name,
+.team-member a {
+    color: var(--color-text);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+}
+
+.team-member a:hover {
+    color: var(--color-secondary);
+}
+
+.member-role,
+.member-affiliation {
+    display: block;
+    color: var(--color-text-light);
+    font-size: var(--font-size-xs);
+}
+
+.related-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-list li {
+    margin-bottom: var(--space-2);
+}
+
+.related-list a {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-snug);
+}
+
+.related-list a:hover {
+    color: var(--color-secondary);
+}
+
+.related-list small {
+    color: var(--color-text-light);
+    margin-left: var(--space-2);
+}
+
+.project-footer {
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.project-navigation {
+    display: grid;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+    
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-share {
+    text-align: center;
+}
+</style>

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="page-header">
+    <div class="container">
+        <h1 class="page-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+            <p class="page-subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        {% if page.description %}
+            <p class="page-description">{{ page.description }}</p>
+        {% endif %}
+    </div>
+</div>
+
+<div class="page-content">
+    <div class="container">
+        {% if page.toc %}
+            <div class="content-with-toc">
+                <aside class="table-of-contents">
+                    <h3>Table of Contents</h3>
+                    {{ content | toc_only }}
+                </aside>
+                <article class="main-article">
+                    {{ content }}
+                </article>
+            </div>
+        {% else %}
+            <article class="main-article">
+                {{ content }}
+            </article>
+        {% endif %}
+        
+        {% if page.last_modified_at %}
+            <div class="page-meta">
+                <p class="last-updated">Last updated: {{ page.last_modified_at | date: "%B %d, %Y" }}</p>
+            </div>
+        {% endif %}
+    </div>
+</div>

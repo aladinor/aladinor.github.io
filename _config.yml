@@ -1,4 +1,157 @@
+# Site Settings
 title: Alfonso Ladino-Rincon
+description: "Atmospheric Scientist specializing in cloud physics, numerical modeling, and open science workflows"
+url: "https://aladinor.github.io"
+baseurl: ""
 logo: assets/images/aladinor.png
-show_downloads: true
+author: "Alfonso Ladino-Rincon"
+
+# Theme
 theme: jekyll-theme-minimal
+show_downloads: true
+
+# SEO & Metadata
+lang: en
+timezone: America/Toronto
+
+# Social Links
+social:
+  twitter: 
+  linkedin: 
+  github: aladinor
+  orcid: 
+  google_scholar: 
+  researchgate: 
+
+# Collections Configuration
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: date
+  talks:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: date
+  projects:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: date
+  datasets:
+    output: true
+    permalink: /:collection/:name/
+    sort_by: date
+
+# Default front matter for collections
+defaults:
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+      author: "Alfonso Ladino-Rincon"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "talk"
+      author: "Alfonso Ladino-Rincon"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alfonso Ladino-Rincon"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      author: "Alfonso Ladino-Rincon"
+  - scope:
+      path: ""
+      type: "datasets"
+    values:
+      layout: "dataset"
+      author: "Alfonso Ladino-Rincon"
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Alfonso Ladino-Rincon"
+
+# Plugins (for GitHub Pages compatibility)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Feed Configuration
+feed:
+  posts_limit: 10
+  excerpt_only: true
+
+# SEO Tag Configuration
+seo:
+  type: Person
+  name: Alfonso Ladino-Rincon
+  links:
+    - https://github.com/aladinor
+
+# Markdown Configuration
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .idea/
+
+# Include files
+include:
+  - _pages
+
+# Academic-specific settings
+academic:
+  research_interests:
+    - "Atmospheric Physics & Chemistry"
+    - "Cloud Physics & Microphysics"
+    - "Numerical Modeling"
+    - "Remote Sensing"
+    - "Machine Learning & Data Science"
+    - "Open Science & Cloud-Optimized Workflows"
+  institution: "University of Illinois at Urbana-Champaign"
+  department: "Department of Atmospheric Sciences"
+  position: "PhD Candidate"
+
+# Navigation Menu Structure
+navigation:
+  - name: "Home"
+    url: "/"
+  - name: "Research" 
+    url: "/research/"
+  - name: "Publications"
+    url: "/publications/"
+  - name: "Datasets"
+    url: "/datasets/"
+  - name: "Open Science"
+    url: "/open-science/"
+  - name: "Talks"
+    url: "/talks/"
+  - name: "Projects"
+    url: "/projects/"
+  - name: "About"
+    url: "/about/"
+  - name: "Blog"
+    url: "/blog/"

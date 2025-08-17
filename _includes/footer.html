@@ -1,0 +1,93 @@
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3 class="footer-title">{{ site.title }}</h3>
+                    <p class="footer-description">{{ site.description }}</p>
+                    <div class="footer-social">
+                        {% if site.social.github %}
+                            <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        {% endif %}
+                        {% if site.social.orcid %}
+                            <a href="https://orcid.org/{{ site.social.orcid }}" target="_blank" rel="noopener" class="footer-social-link" aria-label="ORCID">
+                                <i class="fab fa-orcid"></i>
+                            </a>
+                        {% endif %}
+                        {% if site.social.google_scholar %}
+                            <a href="{{ site.social.google_scholar }}" target="_blank" rel="noopener" class="footer-social-link" aria-label="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        {% endif %}
+                        {% if site.social.linkedin %}
+                            <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        {% endif %}
+                        {% if site.social.researchgate %}
+                            <a href="https://researchgate.net/profile/{{ site.social.researchgate }}" target="_blank" rel="noopener" class="footer-social-link" aria-label="ResearchGate">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+                        <li><a href="{{ '/datasets/' | relative_url }}">Datasets</a></li>
+                        <li><a href="{{ '/talks/' | relative_url }}">Talks</a></li>
+                        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                    </ul>
+                </div>
+
+                <!-- Additional Links -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="{{ '/about/' | relative_url }}">About Me</a></li>
+                        <li><a href="{{ '/research/' | relative_url }}">Research Interests</a></li>
+                        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+                        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact</h4>
+                    <div class="footer-contact">
+                        {% if site.academic.institution %}
+                            <p>{{ site.academic.institution }}</p>
+                        {% endif %}
+                        {% if site.academic.department %}
+                            <p>{{ site.academic.department }}</p>
+                        {% endif %}
+                        {% if site.email %}
+                            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p class="copyright">
+                    &copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}. 
+                    Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> 
+                    and hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.
+                </p>
+                <p class="footer-note">
+                    Committed to <strong>Open Science</strong> and <strong>FAIR</strong> research practices.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

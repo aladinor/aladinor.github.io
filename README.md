@@ -62,7 +62,7 @@
  - **Leveraging FAIR principles for efficient management of meteorological radar data**  
   European Radar Conference – ERAD 2024. Poster presentation  
   Rome, Italy.  09/24
-
+cla
 - **Leveraging FAIR principles for efficient management of meteorological radar data**  
   Scientific Python Conference – SciPy 2024. Poster presentation  
   Tacoma, United States. 06/24

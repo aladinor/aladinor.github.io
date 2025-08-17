@@ -1,0 +1,19 @@
+# Talks Collection
+
+This directory contains conference presentations, seminars, and invited talks.
+
+## Front Matter Template
+
+Each talk should include:
+- title: Talk title
+- date: Presentation date (YYYY-MM-DD)
+- venue: Conference or institution name
+- location: City, Country
+- type: conference/seminar/invited/workshop
+- slides_url: Link to slides (if available)
+- video_url: Link to recording (if available)
+- abstract: Brief summary
+- tags: Keywords
+
+## Example filename format:
+YYYY-MM-DD-conference-short-title.md
