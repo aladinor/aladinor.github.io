@@ -1,0 +1,41 @@
+name: Test MyST Build
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [book-navigation]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install MyST
+        run: npm install -g mystmd
+
+      - name: Build MyST site
+        run: myst build --html
+
+      - name: Check build output
+        run: |
+          if [ ! -d "_build/html" ]; then
+            echo "Build failed: _build/html directory not found"
+            exit 1
+          fi
+          echo "✅ MyST build successful"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: myst-build
+          path: _build/html
+          retention-days: 7
