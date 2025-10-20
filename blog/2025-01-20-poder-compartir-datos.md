@@ -41,9 +41,9 @@ Hay un principio democrático simple: los datos producidos con fondos públicos 
 
 Cuando se comparten abiertamente, ese bien público se refuerza a sí mismo. La ciudadanía puede usarlos para ejercer control social: verificar la calidad, detectar anomalías, hacer preguntas. Las universidades y empresas pueden innovar. Los gobiernos locales pueden planificar mejores respuestas. Cada usuario externo se convierte en una pequeña extensión del servicio público, ampliando su impacto sin aumentar su presupuesto.
 
-"Compartir es cuidar" no es solo una frase amable. Compartir datos es una forma de cuidar a las personas, al país y a los propios sensores. Es cuidar a las personas porque los datos abiertos protegen vidas. Es cuidar al país porque convierten un gasto nacional en capacidad nacional. Y es cuidar a los sensores porque, cuando más gente usa los datos, los problemas se detectan antes y las calibraciones mejoran. La restricción, en cambio, aísla tanto a las personas como a los instrumentos: un circuito cerrado deja solo a unos pocos profesionales la tarea de detectar fallas o generar mejoras.
+“Compartir es cuidar” no es solo una frase amable. Compartir datos es una forma de cuidar a las personas, al país y a los propios sensores. Es cuidar a las personas porque los datos abiertos protegen vidas. Es cuidar al país porque convierten un gasto nacional en capacidad nacional. Y es cuidar a los sensores porque, cuando más gente usa los datos, los problemas se detectan antes y las calibraciones mejoran. La restricción, en cambio, aísla tanto a las personas como a los instrumentos: un circuito cerrado deja solo a unos pocos profesionales la tarea de detectar fallas o generar mejoras.
 
-## Sistemas sin obstáculos y sostenibilidad
+## Sistemas sin obstaculos y sostenibilidad
 
 A veces se piensa que los datos abiertos son un lujo que solo los países ricos pueden permitirse. En realidad, compartirlos puede hacer que las redes de observación sean más sostenibles, porque aumentan su utilidad y su valor público. Cuantos más sectores usan la información, más razones existen para mantenerla activa y actualizada.
 
@@ -75,4 +75,4 @@ La idea central es sencilla: los sensores generan señales, pero la circulación
 
 ---
 
-*Esta reflexión surge del taller "Expanding and Accelerating Global Climate Data Collaboration" realizado en Hatfield Heath, Inglaterra, y las conversaciones sobre el futuro de los datos climáticos abiertos en América Latina.*
+*Esta reflexión surge del taller "Expanding and Accelerating Global Climate Data Collaboration" realizado en Hatfield Heath, Inglaterra, y las conversaciones sobre el futuro de los datos climáticos abiertos en el mundo.*
