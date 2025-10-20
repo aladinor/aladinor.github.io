@@ -1,19 +1,30 @@
+---
+downloads:
+  - file: _static/CV_ALR.pdf
+    title: Download CV (PDF)
+---
+
 # Curriculum Vitae
 
-Download my full curriculum vitae in PDF format.
+You can download my complete CV as a PDF using the download button at the top-right of this page.
 
-::::{grid} 1 1 1 1
-:gutter: 2
+## Quick Summary
 
-:::{grid-item-card}
-:class-header: sd-bg-primary sd-text-white
+PhD candidate in atmospheric sciences specializing in:
+- Big data processing and data engineering for Earth observation
+- Machine learning applications for weather and climate
+- Cloud-native data formats (Zarr, Parquet) and ARCO principles
+- Open science and FAIR data practices
 
-**Download CV**
+## Recent Experience
 
-Click the button below to download my full CV as a PDF file.
+**Data Science Intern** | Earthmover PBC | May–August 2025
+Developed analysis-ready, cloud-optimized (ARCO) datasets for meteorological data products, with focus on improving radar data accessibility and usability.
 
-+++
-[Download CV (PDF)](/CV_ALR.pdf){download}
-:::
+## Education
 
-::::
+- **Ph.D. in Atmospheric Sciences** | University of Illinois at Urbana-Champaign | 2020–2025 (Expected)
+- **M.Sc. in Meteorology** | Universidad Nacional de Colombia | 2018
+- **B.Sc. in Agricultural Engineering** | Universidad Nacional de Colombia | 2013
+
+For complete details including publications, talks, software projects, and skills, please download the full CV above.
