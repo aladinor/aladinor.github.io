@@ -11,7 +11,7 @@ category: blog
 ---
 name: wdr-header
 figclass: align-center
-width: 100%
+width: 80%
 ---
 *Fuente: [World Development Report 2021 - Data as a Force for Public Good](https://wdr2021.worldbank.org/stories/data-as-a-force-for-public-good/)*
 ```
@@ -79,9 +79,10 @@ Lo que falta decidir es el modelo de circulación: si los datos fluirán abierta
 
 En última instancia, compartir datos es una forma de cuidado: de las personas, del conocimiento y de la inversión pública. Los sensores duran más cuando muchas miradas verifican sus resultados. El país gana cuando más mentes trabajan en sus desafíos ambientales. Y la sociedad está más segura cuando la información fluye tan libremente como el aire y el agua que medimos.
 
+La idea central es sencilla: los sensores generan señales, pero la circulación genera progreso. Colombia ya logró la primera parte de esa ecuación. Conseguir que la segunda fluya sin barreras —de forma abierta, rápida y confiable— es la manera de hacer que la inversión en observación meteorológica se multiplique cada día, para todos.
+
 [//]: # (> **Cierre potente:** “Los sensores generan señales, pero la circulación genera progreso.”)
 
-La idea central es sencilla: los sensores generan señales, pero la circulación genera progreso. Colombia ya logró la primera parte de esa ecuación. Conseguir que la segunda fluya sin barreras —de forma abierta, rápida y confiable— es la manera de hacer que la inversión en observación meteorológica se multiplique cada día, para todos.
 ---
 
 *Esta reflexión surge del taller "Expanding and Accelerating Global Climate Data Collaboration" realizado en Hatfield Heath, Inglaterra, y las conversaciones sobre el futuro de los datos climáticos abiertos en el mundo.*
