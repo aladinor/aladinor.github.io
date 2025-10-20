@@ -17,6 +17,7 @@ on:
 jobs:
   test-build:
     runs-on: ubuntu-latest
+    environment: github-pages
     permissions:
       contents: read
       pages: write
