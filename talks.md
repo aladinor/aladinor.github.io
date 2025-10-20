@@ -2,6 +2,47 @@
 
 A selection of my conference presentations, workshops, and invited talks on radar meteorology, open science, and machine learning for atmospheric sciences.
 
+## 2025
+
+### CARLA 2025: Analysis-Ready, Cloud-Optimized Data Formats
+**Latin America High Performance Computing Conference | September 2025 | Kingston, Jamaica**
+
+```{card}
+**Oral presentation**
+
+Presented on analysis-ready, cloud-optimized data formats for scalable weather and climate science:
+- ARCO principles and best practices
+- Cloud-native radar data workflows
+- Performance benchmarks and scalability
+- Real-world applications in weather forecasting
+```
+
+### AMS Radar Conference 2025: Advancing Open Radar Science
+**41st AMS Radar Meteorology Conference | August 2025 | Toronto, Canada**
+
+```{card}
+**Oral presentation**
+
+Advancing Open Radar Science: FAIR Principles and Cloud-Native Data Management
+- FAIR data principles for radar datasets
+- Cloud-native storage formats (Zarr)
+- Open-source tools and workflows
+- Community collaboration and impact
+```
+
+### Cloud Geonative Conference 2025: Efficient Radar Data Management
+**Cloud Geonative Conference | May 2025 | Snowbird, Utah**
+
+```{card}
+**Oral presentation**
+
+Efficient Weather Radar Data Management in Practice: FAIR Principles and Cloud-Native Solutions
+- Practical implementation of FAIR principles
+- Cloud-optimized radar data workflows
+- Performance improvements and cost benefits
+- Case studies and lessons learned
+```
+
 ## 2024
 
 ### ERAD 2024: Open Radar Science Short Course
@@ -96,6 +137,39 @@ Overview of the Colombian weather radar network modernization and quantitative p
 ```
 
 ## Workshops & Short Courses
+
+### 41st AMS Radar Conference: Open Radar Science Short Course
+**August 2025 | Toronto, Canada**
+
+```{card}
+**Lead instructor**
+
+Lead instructor and contributor for a hands-on tutorial on cloud-native radar workflows using open-source tools such as xradar.
+
+DOI: [10.5281/zenodo.13694510](https://doi.org/10.5281/zenodo.13694510)
+```
+
+### ERAD 2024: Open Radar Science Short Course
+**September 2024 | Rome, Italy**
+
+```{card}
+**Lead instructor**
+
+Lead instructor and contributor for a hands-on tutorial on radar science using FAIR principles and cloud-native formats (Zarr).
+
+DOI: [10.5281/zenodo.13694510](https://doi.org/10.5281/zenodo.13694510)
+```
+
+### AtmosCol 2023: Scientific Data with Python and R
+**November 2023 | Colombia**
+
+```{card}
+**Lead instructor**
+
+Lead instructor and contributor for a hands-on tutorial on teaching and exploring hydrometeorological data analysis with Python in Spanish.
+
+DOI: [10.5281/zenodo.8404427](https://doi.org/10.5281/zenodo.8404427)
+```
 
 ### Project Pythia: Radar Cookbook Contributor
 **Ongoing**

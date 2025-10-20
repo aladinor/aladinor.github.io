@@ -1,8 +1,11 @@
 ---
 date: 2024-11-15
 author: Alfonso Ladino-Rincon
-tags: radar, standards, fm-301, interoperability
-category: blog
+tags:
+  - radar
+  - standards
+  - fm-301
+  - interoperability
 ---
 
 # From Files to Datasets: FM-301 and the Future of Radar Interoperability

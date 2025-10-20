@@ -1,41 +1,58 @@
 # Alfonso Ladino-Rincon - Academic Website
 
-This is my personal academic website, built with Sphinx and hosted on GitHub Pages.
+This is my personal academic website, built with [MyST](https://mystmd.org/)!
 
-## Local Development
+It is inspired by [Chris Holdgraf's personal website](https://github.com/choldgraf/choldgraf.github.io) and uses the MyST book-theme for beautiful, Jupyter Book-style navigation. Thanks Chris!
 
-### Setup
+## Build and Preview the Site
+
+### Install MyST
+
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Install MyST globally
+npm install -g mystmd
 ```
 
 ### Build the site
+
 ```bash
 # Build HTML
-sphinx-build -b html . _build/html
-
-# Or use the Python http.server to preview
-python -m http.server --directory _build/html 8000
+myst build --html
 ```
 
-Then visit http://localhost:8000
+This will build the site and output files to `_build/html`.
+
+### Run a live webserver
+
+```bash
+# Start development server with live reload
+myst start
+```
+
+Then visit http://localhost:3002 to see your site with live updates as you edit!
 
 ## Deployment
 
 The site automatically deploys to GitHub Pages when changes are pushed to the `main` branch via GitHub Actions.
 
+### CI/CD Workflows
+
+- **Test Build**: Runs on all pushes, PRs, and weekly (Mondays at 9 AM UTC) to ensure the site builds correctly
+- **Deploy**: Automatically deploys to GitHub Pages on pushes to `main`
+
 ## Adding Content
 
 ### Blog Posts
 
-Create new blog posts in the `blog/` directory with the following front matter:
+Create new blog posts in the `blog/` directory with the following frontmatter:
 
 ```markdown
 ---
 date: 2025-01-15
 author: Alfonso Ladino-Rincon
-tags: tag1, tag2
+tags:
+  - tag1
+  - tag2
 ---
 
 # Post Title
@@ -43,23 +60,32 @@ tags: tag1, tag2
 Post content here...
 ```
 
-### Profile Photo
+Then add the post to the `myst.yml` file under the Blog section.
 
-Add your profile photo to `assets/images/profile.jpg`
+### Images and Static Files
+
+- Profile photo: `_static/profile.jpg`
+- Blog images: `public/images/blog/`
+- Downloadable files (like CV): `_static/` or `public/`
 
 ## Structure
 
-- `conf.py` - Sphinx configuration
+- `myst.yml` - MyST configuration (navigation, metadata, etc.)
 - `index.md` - Homepage
 - `about.md` - About page
+- `cv.md` - CV page (with download link)
 - `publications.md` - Publications page
+- `talks.md` - Talks and presentations
+- `projects.md` - Projects page
 - `blog.md` - Blog landing page
-- `blog/` - Blog posts (create this directory and add posts)
-- `assets/` - Static assets (images, etc.)
+- `blog/` - Blog posts
+- `_static/` - Static assets (images, CSS, downloadable files)
+- `public/` - Public files served at root (CV, images)
+- `.github/workflows/` - CI/CD workflows
 
 ## Built With
 
-- [Sphinx](https://www.sphinx-doc.org/)
-- [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/)
-- [ABlog](https://ablog.readthedocs.io/) for blogging
-- [MyST Parser](https://myst-parser.readthedocs.io/) for Markdown support
+- [MyST Markdown](https://mystmd.org/) - Modern, extensible markdown for scientific and technical content
+- [MyST Book Theme](https://mystmd.org/guide/quickstart-jupyter-book-theme) - Beautiful Jupyter Book-style navigation
+- [sphinx-design](https://sphinx-design.readthedocs.io/) - Grid and card components
+- Inspired by [Chris Holdgraf's website](https://github.com/choldgraf/choldgraf.github.io)
