@@ -21,6 +21,8 @@ La semana pasada participé en el taller internacional “Expanding and Accelera
 
 Las discusiones abordaron cómo sostener plataformas de datos globales de forma creativa y realista, combinando ciencia, tecnología y nuevos modelos económicos. De esas reflexiones globales surgieron varias ideas que aquí llevo al contexto colombiano: fortalecer nuestra infraestructura de observación y, sobre todo, promover la circulación abierta de los datos.
 
+**Date:** January 20, 2025
+
 Cuando un país invierte en observar su atmósfera, no solo está comprando tecnología: está construyendo una mirada colectiva sobre su propio territorio. Los radares meteorológicos, los satélites y las estaciones hidrológicas nos permiten monitorear en tiempo real las condiciones de lluvia, desde su génesis hasta sus posibles impactos. Con esa información es posible anticipar crecidas, emitir alertas tempranas y advertir otros riesgos asociados a la precipitación. Estos instrumentos existen para proteger a las personas y guiar decisiones. Pero su verdadero poder depende de algo más que los sensores: depende de la circulación de los datos que producen.
 
 ## Los sensores miden, pero compartir multiplica
