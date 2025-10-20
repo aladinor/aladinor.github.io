@@ -16,10 +16,18 @@ PhD candidate in atmospheric sciences specializing in:
 - Cloud-native data formats (Zarr, Parquet) and ARCO principles
 - Open science and FAIR data practices
 
-## Recent Experience
+## Work Experience
 
 **Data Science Intern** | Earthmover PBC | May–August 2025
-Developed analysis-ready, cloud-optimized (ARCO) datasets for meteorological data products, with focus on improving radar data accessibility and usability.
+- Developed analysis-ready, cloud-optimized (ARCO) datasets for meteorological data products
+- Focused on improving radar data accessibility and usability
+- Created educational content and documentation for ARCO best practices
+
+**Radar Meteorologist & Software Developer** | IDEAM (Colombian National Weather Service) | 2016–2020
+- Developed radar and satellite data visualization tools for operational meteorologists
+- Designed multi-sensor quantitative precipitation estimation products
+- Integrated weather data pipelines for national early warning systems
+- Provided radar meteorology training to aviation and weather personnel
 
 ## Education
 
@@ -27,4 +35,16 @@ Developed analysis-ready, cloud-optimized (ARCO) datasets for meteorological dat
 - **M.Sc. in Meteorology** | Universidad Nacional de Colombia | 2018
 - **B.Sc. in Agricultural Engineering** | Universidad Nacional de Colombia | 2013
 
-For complete details including publications, talks, software projects, and skills, please download the full CV above.
+## Skills
+
+**Programming & Tools:** Python, Shell, Git, Docker | Conda, Mamba, Pip, UV
+
+**Data Science:** Pandas, Xarray, SQL, VirtualiZarr, Kerchunk | PyTorch, TensorFlow, Scikit-learn
+
+**Workflows:** HPC (Dask, Slurm) | Data versioning (Icechunk) | CI/CD (GitHub Actions, pre-commit) | Cloud (AWS S3, Coiled)
+
+**Data Formats:** Zarr, NetCDF, HDF5, GRIB, Parquet | ARCO principles
+
+**Software Projects:** raw2zarr (Lead Developer) | xarray and xradar (Contributor) | Open Radar, Project Pythia (Member)
+
+For complete details including publications and talks, please download the full CV above.
