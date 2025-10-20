@@ -17,6 +17,10 @@ on:
 jobs:
   test-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -47,6 +51,33 @@ jobs:
           name: myst-html-${{ github.run_id }}
           path: _build/html
           retention-days: 7
+
+      - name: Configure GitHub Pages (preview)
+        if: github.event_name == 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Upload preview artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _build/html
+
+      - name: Deploy preview
+        if: github.event_name == 'pull_request'
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          preview: true
+
+      - name: Publish preview link
+        if: github.event_name == 'pull_request'
+        run: |
+          {
+            echo "## Preview deployed"
+            echo ""
+            echo "- URL: ${{ steps.deployment.outputs.page_url }}"
+            echo "- Artifact: \`myst-html-${GITHUB_RUN_ID}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Publish build summary
         if: always()
