@@ -1,8 +1,11 @@
 ---
 date: 2024-10-20
 author: Alfonso Ladino-Rincon
-tags: radar, open-science, big-data, machine-learning
-category: blog
+tags:
+  - radar
+  - open-science
+  - big-data
+  - machine-learning
 ---
 
 # The Untapped Promise of Weather Radar Data

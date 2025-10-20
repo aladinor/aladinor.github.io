@@ -1,8 +1,11 @@
 ---
 date: 2024-12-01
 author: Alfonso Ladino-Rincon
-tags: radar, cloud-native, zarr, earthmover
-category: blog
+tags:
+  - radar
+  - cloud-native
+  - zarr
+  - earthmover
 ---
 
 # Radar Scan Datasets: Time-Aware Cloud-Native Data Access

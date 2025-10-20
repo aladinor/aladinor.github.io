@@ -2,15 +2,23 @@
 
 My research publications focus on radar meteorology, cloud physics, machine learning applications, and open science practices.
 
-## Journal Articles & Conference Papers
+## Journal Articles
 
-Publications are indexed through my [ORCID profile](https://orcid.org/0000-0001-8081-7827).
+### Under Review
 
-### Selected Publications
+**Ladino, A.** et al., *Droplet size distribution retrieval from dual-frequency precipitation radar measurement using a deep neural network*, Journal of Atmospheric and Oceanic Technology. Manuscript under review (JTECH-D-25-0004)
 
-Publications will be automatically populated from ORCID in a future update.
+### 2025
 
-For now, please visit my [ORCID profile](https://orcid.org/0000-0001-8081-7827) for a complete list of publications.
+**Drucker, J.** et al., *Stable atmospheric conditions underlie a steady pace of nocturnal bird migration in the tropics*, Proceedings of the Royal Society B. DOI: [10.1098/rspb.2024.2609](https://doi.org/10.1098/rspb.2024.2609)
+
+### 2021
+
+**Rivelli Zea, L.**, Nesbitt, S.W., **Ladino, A.**, et al., *Raindrop Size Spectrum in Deep Convective Regions of the Americas*, Atmosphere, 12(8), 979. DOI: [10.3390/atmos12080979](https://doi.org/10.3390/atmos12080979)
+
+---
+
+For a complete list of publications, visit my [ORCID profile](https://orcid.org/0000-0001-8081-7827).
 
 ## Open Source Software
 
