@@ -44,6 +44,17 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: myst-build
+          name: myst-html-${{ github.run_id }}
           path: _build/html
           retention-days: 7
+
+      - name: Publish build summary
+        if: always()
+        run: |
+          {
+            echo "## MyST build artifacts"
+            echo ""
+            echo "- Status: ✅ successful build"
+            echo "- Artifact: \`myst-html-${GITHUB_RUN_ID}\` (download to preview the generated site)"
+            echo "- Command: \`myst build --html\`"
+          } >> "$GITHUB_STEP_SUMMARY"
