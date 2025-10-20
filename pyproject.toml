@@ -1,0 +1,12 @@
+[project]
+name = "aladinor-docs"
+version = "0.1.0"
+description = "Alfonso Ladino-Rincon's academic website"
+requires-python = ">=3.9"
+dependencies = [
+    "sphinx>=7.0.0",
+    "pydata-sphinx-theme>=0.15.0",
+    "myst-parser>=2.0.0",
+    "ablog>=0.11.0",
+    "sphinx-design>=0.5.0",
+]
