@@ -1,0 +1,20 @@
+{% if post %}
+<div class="ablog-post-card">
+  <h3 class="ablog-post-title">
+    <a href="{{ post.get_absolute_url() }}">{{ post.title }}</a>
+  </h3>
+
+  {% if post.excerpt %}
+  <div class="ablog-post-excerpt">
+    {{ post.excerpt }}
+  </div>
+  {% endif %}
+
+  <div class="ablog-post-meta">
+    <strong>Date:</strong> {{ post.published.strftime(ablog.post_date_format) }}
+    {% if post.author %}
+    | <strong>Author:</strong> {{ post.author }}
+    {% endif %}
+  </div>
+</div>
+{% endif %}

@@ -43,6 +43,8 @@ Un ejemplo más reciente confirma esta tendencia: en 2025, el Centro Europeo de 
 
 La decisión del ECMWF refuerza una idea esencial: la apertura no debilita a las instituciones, las fortalece. Al liberar datos en tiempo real, la agencia europea no pierde autoridad; gana relevancia, porque multiplica el número de mentes que trabajan sobre sus resultados y amplía el impacto de su inversión pública.
 
+Sin embargo, basta un pequeño retraso o una traba administrativa para obtener el efecto contrario. Incluso demoras mínimas introducen obstáculos que ralentizan la participación y debilitan la capacidad colectiva. Los sistemas abiertos y ágiles permiten que las ideas y las aplicaciones surjan al instante alrededor del flujo de datos. Cuando los impedimentos son mínimos, la circulación se acelera; cuando se acumulan, la creatividad se detiene.
+
 ## Los datos son un bien público
 
 Hay un principio democrático simple: los datos producidos con fondos públicos son un bien público. El costo de comprar, instalar y mantener los radares o satélites ya fue asumido por los contribuyentes. Los datos que generan, por tanto, no pertenecen a una institución, sino a la sociedad.
@@ -50,6 +52,8 @@ Hay un principio democrático simple: los datos producidos con fondos públicos 
 [//]: # (> **Frase clave:** “Compartir es cuidar”)
 
 Cuando se comparten abiertamente, ese bien público se refuerza a sí mismo. La ciudadanía puede usarlos para ejercer control social: verificar la calidad, detectar anomalías, hacer preguntas. Las universidades y empresas pueden innovar. Los gobiernos locales pueden planificar mejores respuestas. Cada usuario externo se convierte en una pequeña extensión del servicio público, ampliando su impacto sin aumentar su presupuesto.
+
+**“Compartir es cuidar”** no es solo una frase amable. Compartir datos es una forma de cuidar a las personas, al país y a los propios sensores. Es cuidar a las personas porque los datos abiertos protegen vidas. Es cuidar al país porque convierten un gasto nacional en capacidad nacional. Y es cuidar a los sensores porque, cuando más gente usa los datos, los problemas se detectan antes y las calibraciones mejoran. La restricción, en cambio, aísla tanto a las personas como a los instrumentos: un circuito cerrado deja solo a unos pocos profesionales la tarea de detectar fallas o generar mejoras.
 
 ## Sistemas sin obstáculos y sostenibilidad
 
@@ -71,6 +75,7 @@ En última instancia, compartir datos es una forma de cuidado: de las personas, 
 
 [//]: # (> **Cierre potente:** “Los sensores generan señales, pero la circulación genera progreso.”)
 
+La idea central es sencilla: los sensores generan señales, pero la circulación genera progreso. Colombia ya logró la primera parte de esa ecuación. Conseguir que la segunda fluya sin barreras —de forma abierta, rápida y confiable— es la manera de hacer que la inversión en observación meteorológica se multiplique cada día, para todos.
 ---
 
 *Esta reflexión surge del taller "Expanding and Accelerating Global Climate Data Collaboration" realizado en Hatfield Heath, Inglaterra, y las conversaciones sobre el futuro de los datos climáticos abiertos en el mundo.*

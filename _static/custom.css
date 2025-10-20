@@ -1,0 +1,164 @@
+/*
+ * Custom CSS for Alfonso Ladino-Rincon's Academic Website
+ * Dark theme matching Chris Holdgraf's color scheme
+ */
+
+/* ============================================
+   Color Variables - Dark Gray Palette (Chris Holdgraf style)
+   ============================================ */
+:root {
+    /* Dark backgrounds - neutral grays */
+    --bg-dark: #181818;
+    --bg-dark-2: #1e1e1e;
+    --bg-dark-3: #252525;
+    --bg-dark-4: #2d2d2d;
+
+    /* Text colors */
+    --text-primary: #e8e8e8;
+    --text-secondary: #b8b8b8;
+    --text-muted: #888888;
+
+    /* Accent - subtle blue for links */
+    --link-color: #4a9eff;
+    --link-hover: #6bb6ff;
+}
+
+/* Profile photo - smaller and balanced */
+.profile-photo {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* About me section - adapts to theme */
+.about-me-section {
+    padding: 1.5rem;
+    border-radius: 8px;
+    /* No fixed background - inherits from theme */
+}
+
+.about-me-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+/* Cards - adapts to theme */
+.sd-card {
+    /* Let PyData theme handle background colors */
+    transition: all 0.3s ease;
+}
+
+.sd-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Blog post cards styling - Similar to Chris Holdgraf's layout */
+.postlist {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+}
+
+.ablog-post {
+    padding: 1.75rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    list-style: none;
+}
+
+html[data-theme="dark"] .ablog-post {
+    background-color: var(--bg-dark-2, #1e1e1e);
+    border-color: #2d2d2d;
+}
+
+html[data-theme="light"] .ablog-post {
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+
+.ablog-post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="dark"] .ablog-post:hover {
+    border-color: #3a3a3a;
+}
+
+html[data-theme="light"] .ablog-post:hover {
+    border-color: #dee2e6;
+}
+
+.ablog-post-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.ablog-post-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ablog-post-title a:hover {
+    color: var(--link-color, #4a9eff);
+}
+
+.ablog-post-excerpt {
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+html[data-theme="dark"] .ablog-post-excerpt {
+    color: var(--text-secondary, #b8b8b8);
+}
+
+html[data-theme="light"] .ablog-post-excerpt {
+    color: #495057;
+}
+
+/* Make "Read the full blog post" link more prominent */
+.ablog-post-excerpt a[href*="earthmover"] {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--link-color, #4a9eff);
+}
+
+.ablog-post-excerpt a[href*="earthmover"]:hover {
+    color: var(--link-hover, #6bb6ff);
+    text-decoration: underline;
+}
+
+/* Date and author metadata styling - like Chris's blog */
+.ablog-post-excerpt strong {
+    font-weight: 600;
+}
+
+.ablog-post p:last-of-type {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid;
+    font-size: 0.9rem;
+}
+
+html[data-theme="dark"] .ablog-post p:last-of-type {
+    border-top-color: #3a3a3a;
+    color: var(--text-muted, #888);
+}
+
+html[data-theme="light"] .ablog-post p:last-of-type {
+    border-top-color: #dee2e6;
+    color: #6c757d;
+}
