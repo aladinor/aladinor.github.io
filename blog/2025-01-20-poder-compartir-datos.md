@@ -7,8 +7,14 @@ category: blog
 
 # El poder de compartir: convertir los datos públicos en bien público
 
+```{figure} /_static/images/blog/header.svg
 ---
-**Date:** January 20, 2025
+name: wdr-header
+figclass: align-center
+width: 100%
+---
+*Fuente: [World Development Report 2021 - Data as a Force for Public Good](https://wdr2021.worldbank.org/stories/data-as-a-force-for-public-good/)*
+```
 
 La semana pasada participé en el taller internacional “Expanding and Accelerating Global Climate Data Collaboration”, realizado en Hatfield Heath, Inglaterra. En un momento crítico para la ciencia del clima —cuando los modelos de financiamiento tradicionales enfrentan incertidumbre y la urgencia por actuar crece—, el encuentro reunió a expertos en infraestructura, investigadores y líderes institucionales para explorar nuevas formas de colaboración rápida en torno a los datos climáticos.
 
