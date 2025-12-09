@@ -10,6 +10,8 @@ My research publications focus on radar meteorology, cloud physics, machine lear
 
 **Drucker, J.** et al., *Stable atmospheric conditions underlie a steady pace of nocturnal bird migration in the tropics*, Proceedings of the Royal Society B. DOI: [10.1098/rspb.2024.2609](https://doi.org/10.1098/rspb.2024.2609)
 
+Zhu, Z., Yang, F., Zawadowicz, M., **Ladino Rincon, A.**, Ritvanen, J., Lankowicz, S., Lundstrom, K. H., and Fitzgerald, T., *Giant Cloud Condensation Nuclei Facilitate Drizzle Formation in Stratocumulus—Insights From a Combined Observation-Modeling Framework*, Journal of Geophysical Research: Atmospheres. DOI: [10.1029/2025JD044736](https://doi.org/10.1029/2025JD044736)
+
 ### 2021
 
 **Rivelli Zea, L.**, Nesbitt, S.W., **Ladino, A.**, et al., *Raindrop Size Spectrum in Deep Convective Regions of the Americas*, Atmosphere, 12(8), 979. DOI: [10.3390/atmos12080979](https://doi.org/10.3390/atmos12080979)
