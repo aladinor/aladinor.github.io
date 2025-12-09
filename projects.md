@@ -38,22 +38,6 @@ xradar is a community-driven Python package for reading, processing, and analyzi
 **Technologies:** Python, Xarray, NetCDF, CfRadial
 ```
 
-### GPM Validation Networks
-
-```{card}
-**Ground-based validation of satellite precipitation estimates**
-
-Developing automated processing pipelines for validating NASA's Global Precipitation Measurement (GPM) mission products using:
-
-- Ground-based weather radar networks
-- Rain gauge observations
-- Disdrometer measurements
-
-This work improves our understanding of satellite precipitation retrieval algorithms and their uncertainties.
-
-**Technologies:** Python, NumPy, Pandas, TRMM/GPM data products
-```
-
 ### Neural Networks for Precipitation Microphysics
 
 ```{card}

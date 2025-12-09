@@ -162,9 +162,6 @@ a:hover {
 ### xradar Contributions
 [Description of xradar work]
 
-### GPM Validation Networks
-[Description]
-
 ## Open Source Contributions
 
 - Python atmospheric science ecosystem
