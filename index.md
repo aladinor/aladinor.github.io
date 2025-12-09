@@ -133,4 +133,4 @@ I'm always interested in collaborating on atmospheric science projects, especial
 - Open science and cloud-optimized data workflows
 - Python tool development for the atmospheric science community
 
-Feel free to reach out via [email](mailto:aladino@illinois.edu) or connect with me on [GitHub](https://github.com/aladinor)!
+Feel free to reach out via [email](mailto:alfonso8@illinois.edu) or connect with me on [GitHub](https://github.com/aladinor)!

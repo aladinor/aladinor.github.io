@@ -227,4 +227,4 @@ I'm happy to give talks or workshops on:
 - Python tools for geosciences
 - Cloud-optimized data formats and workflows
 
-Contact me at [aladino@illinois.edu](mailto:aladino@illinois.edu)
+Contact me at [alfonso8@illinois.edu](mailto:alfonso8@illinois.edu)

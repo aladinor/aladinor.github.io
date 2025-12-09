@@ -131,4 +131,4 @@ I'm always interested in new collaborations! If you're working on:
 - Open science and FAIR data
 - Cloud-optimized data formats
 
-Feel free to reach out via [email](mailto:aladino@illinois.edu) or open an issue on [GitHub](https://github.com/aladinor)!
+Feel free to reach out via [email](mailto:alfonso8@illinois.edu) or open an issue on [GitHub](https://github.com/aladinor)!
