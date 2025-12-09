@@ -38,6 +38,20 @@ xradar is a community-driven Python package for reading, processing, and analyzi
 **Technologies:** Python, Xarray, NetCDF, CfRadial
 ```
 
+### Neural Networks for Precipitation Microphysics
+
+```{card}
+**Machine learning for raindrop size distribution retrieval**
+
+Developing deep learning approaches to retrieve precipitation microphysics from GPM dual-frequency radar observations:
+
+- Physics-informed neural network architectures
+- Training on TRMM/GPM radar and disdrometer data
+- Uncertainty quantification for operational use
+
+**Technologies:** Python, PyTorch, TensorFlow, Jupyter
+```
+
 ## Open Source Contributions
 
 ### Open Radar Science Community
