@@ -38,22 +38,6 @@ xradar is a community-driven Python package for reading, processing, and analyzi
 **Technologies:** Python, Xarray, NetCDF, CfRadial
 ```
 
-### GPM Validation Networks
-
-```{card}
-**Ground-based validation of satellite precipitation estimates**
-
-Developing automated processing pipelines for validating NASA's Global Precipitation Measurement (GPM) mission products using:
-
-- Ground-based weather radar networks
-- Rain gauge observations
-- Disdrometer measurements
-
-This work improves our understanding of satellite precipitation retrieval algorithms and their uncertainties.
-
-**Technologies:** Python, NumPy, Pandas, TRMM/GPM data products
-```
-
 ### Neural Networks for Precipitation Microphysics
 
 ```{card}
@@ -89,16 +73,6 @@ Active participant in the Open Radar Science community, contributing to:
 - Contributed to Project Pythia Radar Cookbook
 ```
 
-### Py-ART
-
-```{card}
-:link: https://arm-doe.github.io/pyart/
-
-**Python ARM Radar Toolkit**
-
-Contributing bug fixes, documentation improvements, and feature enhancements to one of the most widely-used radar processing libraries in atmospheric science.
-```
-
 ### Colombian Radar Data Archive
 
 ```{card}
@@ -112,21 +86,6 @@ Transforming 15+ TB of Colombian weather radar data into cloud-optimized, commun
 - Comprehensive metadata following CF conventions
 
 **Impact:** Enabling climate studies, machine learning research, and operational improvements
-```
-
-## Field Campaigns
-
-### CAMP2Ex: Cloud, Aerosol and Monsoon Processes Philippines Experiment
-
-```{card}
-**NASA field campaign participant (2019)**
-
-Participated in the CAMP2Ex field campaign investigating cloud-aerosol interactions and monsoon processes over the Philippines:
-
-- Ground-based radar observations
-- Coordination with airborne measurements
-- Data quality control and processing
-- Precipitation microphysics analysis
 ```
 
 ## Datasets & Data Products
