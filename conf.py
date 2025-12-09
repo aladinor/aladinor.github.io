@@ -51,7 +51,7 @@ html_theme_options = {
         },
         {
             "name": "Email",
-            "url": "mailto:aladino@illinois.edu",
+            "url": "mailto:alfonso8@illinois.edu",
             "icon": "fa-solid fa-envelope",
         },
     ],

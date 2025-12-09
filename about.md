@@ -41,6 +41,6 @@ I am an active contributor to the open-source atmospheric science community, inc
 
 ## Contact Information
 
-- **Email**: aladino@illinois.edu
+- **Email**: alfonso8@illinois.edu
 - **GitHub**: [@aladinor](https://github.com/aladinor)
 - **ORCID**: [0000-0001-8081-7827](https://orcid.org/0000-0001-8081-7827)
