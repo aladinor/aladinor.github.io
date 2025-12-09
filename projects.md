@@ -88,16 +88,6 @@ Transforming 15+ TB of Colombian weather radar data into cloud-optimized, commun
 **Impact:** Enabling climate studies, machine learning research, and operational improvements
 ```
 
-## Datasets & Data Products
-
-I have created and maintain several research-grade datasets:
-
-- **Colombian Radar Archive (Zarr)**: 15+ TB of quality-controlled radar data (2000-present)
-- **GPM Validation Database**: Matched satellite-ground observations for South America
-- **Disdrometer Dataset**: Rain microphysics observations from multiple campaigns
-
-All datasets follow FAIR principles and are available through open repositories (Zenodo, AWS Open Data).
-
 ## Software Skills
 
 **Languages:** Python (expert), R (proficient), Bash, Julia (learning)
