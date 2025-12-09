@@ -86,7 +86,6 @@ Active participant in the Open Radar Science community, contributing to:
 
 **Recent Activities:**
 - Co-organized ERAD 2024 Open Radar Science short course
-- Presented at SciPy 2024 on FAIR radar data workflows
 - Contributed to Project Pythia Radar Cookbook
 ```
 
