@@ -40,7 +40,7 @@ site:
 
 ::::
 
-I work extensively with [raw2zarr](https://github.com/aladinor/raw2zarr) for cloud-optimized radar data, contribute to [xradar](https://github.com/openradar/xradar) and the [Open Radar Science](https://openradarscience.org/) community, and develop tools for GPM validation networks.
+I work extensively with [raw2zarr](https://github.com/aladinor/raw2zarr) for cloud-optimized radar data, and contribute to [xradar](https://github.com/openradar/xradar) and the [Open Radar Science](https://openradarscience.org/) community.
 
 ## Quick Links
 

@@ -266,7 +266,6 @@ a:hover {
 2. **Project Descriptions** (for projects.md)
    - raw2zarr
    - xradar
-   - GPM validation
    - Other research projects
 
 3. **Talks/Presentations** (optional, for talks.md)

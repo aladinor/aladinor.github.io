@@ -60,36 +60,7 @@ Co-organized and taught a half-day short course on open radar science tools and 
 [Materials](https://openradarscience.org/erad2024-short-course/) | [GitHub](https://github.com/openradar/erad2024-short-course)
 ```
 
-### ERAD 2024: Neural Network Retrieval of Particle Size Distributions
-**European Radar Conference | September 2024 | Rome, Italy**
-
-```{card}
-**Oral presentation**
-
-Presented deep learning approach for retrieving precipitation particle size distributions from GPM dual-frequency radar observations:
-- Physics-informed neural network architecture
-- Training on global TRMM/GPM datasets
-- Validation against ground-based disdrometers
-- Operational implementation considerations
-
-[Abstract](https://example.com) | [Slides](https://example.com)
-```
-
 ## 2023
-
-### AMS Radar Conference: GPM Rainfall Retrieval Assessment
-**American Meteorological Society | August 2023 | Minneapolis, MN**
-
-```{card}
-**Poster presentation**
-
-Assessment of GPM dual-frequency precipitation retrieval algorithm using ground-based radar networks in South America:
-- Systematic comparison of GPM DPR and ground radar
-- Regional precipitation biases
-- Implications for satellite algorithm development
-
-[Poster PDF](https://example.com)
-```
 
 ### AtmosCOL 2023: Open Science in Atmospheric Research
 **Colombian Atmospheric Sciences Conference | November 2023 | Bogotá, Colombia**
