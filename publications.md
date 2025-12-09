@@ -8,7 +8,7 @@ My research publications focus on radar meteorology, cloud physics, machine lear
 
 **Ladino-Rincon, A.**, S. W. Nesbitt, L. Di Girolamo, R. M. Rauber, G. M. McFarquhar, and R. P. Lawson, *Droplet Size Distribution Retrieval from Dual-Frequency Precipitation Radar Measurement Using a Deep Neural Network*, Journal of Atmospheric and Oceanic Technology, 42, 1549–1566. DOI: [10.1175/JTECH-D-25-0004.1](https://doi.org/10.1175/JTECH-D-25-0004.1)
 
-**Drucker, J.** et al., *Stable atmospheric conditions underlie a steady pace of nocturnal bird migration in the tropics*, Proceedings of the Royal Society B. DOI: [10.1098/rspb.2024.2609](https://doi.org/10.1098/rspb.2024.2609)
+Drucker, J. R., B. M. Van Doren, N. J. Bayly, W. Ramirez, **Ladino Rincon, A.**, J. M. Bates, and A. M. Dokter, *Stable atmospheric conditions underlie a steady pace of nocturnal bird migration in the tropics*, Proceedings of the Royal Society B: Biological Sciences. DOI: [10.1098/rspb.2024.2609](https://doi.org/10.1098/rspb.2024.2609)
 
 Zhu, Z., Yang, F., Zawadowicz, M., **Ladino Rincon, A.**, Ritvanen, J., Lankowicz, S., Lundstrom, K. H., and Fitzgerald, T., *Giant Cloud Condensation Nuclei Facilitate Drizzle Formation in Stratocumulus—Insights From a Combined Observation-Modeling Framework*, Journal of Geophysical Research: Atmospheres. DOI: [10.1029/2025JD044736](https://doi.org/10.1029/2025JD044736)
 
