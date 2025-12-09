@@ -179,7 +179,6 @@ a:hover {
 ## 2024
 
 - ERAD 2024: Neural Networks for Precipitation Retrieval
-- SciPy 2024: FAIR Principles for Radar Data
 
 ## 2023
 

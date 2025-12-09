@@ -75,21 +75,6 @@ Presented deep learning approach for retrieving precipitation particle size dist
 [Abstract](https://example.com) | [Slides](https://example.com)
 ```
 
-### SciPy 2024: FAIR Principles for Weather Radar Data
-**Scientific Python Conference | July 2024 | Tacoma, WA**
-
-```{card}
-**Lightning talk**
-
-Demonstrated the application of FAIR (Findable, Accessible, Interoperable, Reusable) principles to weather radar data:
-- Challenges with legacy radar data formats
-- raw2zarr workflow for cloud optimization
-- Publishing datasets to open repositories
-- Community impact and adoption
-
-[Video](https://www.youtube.com/scipy2024) | [Slides](https://example.com)
-```
-
 ## 2023
 
 ### AMS Radar Conference: GPM Rainfall Retrieval Assessment
