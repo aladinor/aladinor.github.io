@@ -4,10 +4,10 @@ Here are some of the key research projects and open-source contributions I've be
 
 ## Research Projects
 
-### raw2zarr: Cloud-Optimized Weather Radar Data
+### radar-datatree: Cloud-Optimized Weather Radar Data
 
 ```{card}
-:link: https://github.com/aladinor/raw2zarr
+:link: https://github.com/aladinor/radar-datatree
 
 **Converting weather radar data to cloud-optimized Zarr format**
 

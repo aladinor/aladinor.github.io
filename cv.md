@@ -45,6 +45,6 @@ PhD candidate in atmospheric sciences specializing in:
 
 **Data Formats:** Zarr, NetCDF, HDF5, GRIB, Parquet | ARCO principles
 
-**Software Projects:** raw2zarr (Lead Developer) | xarray and xradar (Contributor) | Open Radar, Project Pythia (Member)
+**Software Projects:** radar-datatree (Lead Developer) | xarray and xradar (Contributor) | Open Radar, Project Pythia (Member)
 
 For complete details including publications and talks, please download the full CV above.
