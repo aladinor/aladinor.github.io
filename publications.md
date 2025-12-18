@@ -22,10 +22,10 @@ For a complete list of publications, visit my [ORCID profile](https://orcid.org/
 
 ## Open Source Software
 
-### Raw2zarr
+### radar-datatree
 A Python package for converting weather radar data to cloud-optimized Zarr format, enabling efficient analysis of large radar datasets.
 
-**Repository**: [https://github.com/aladinor/raw2zarr](https://github.com/aladinor/raw2zarr)
+**Repository**: [https://github.com/aladinor/radar-datatree](https://github.com/aladinor/radar-datatree)
 
 ### Xradar Contributions
 Contributions to the Xradar ecosystem for processing and analyzing weather radar data.
