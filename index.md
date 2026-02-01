@@ -74,7 +74,7 @@ Read about atmospheric science, open data, and technical workflows
 
 ::::
 
-## Recent blog posts
+## My recent posts
 
 ::::{grid} 1 1 1 1
 :gutter: 2
