@@ -15,8 +15,15 @@ My work combines traditional atmospheric science with modern computational metho
 
 ## Education
 
-- **PhD in Atmospheric Sciences** (in progress)
-  University of Illinois at Urbana-Champaign
+- **Ph.D. in Atmospheric Sciences** | University of Illinois at Urbana-Champaign | 2020–2025 (Expected)
+- **M.Sc. in Meteorology** | Universidad Nacional de Colombia | 2018
+- **B.Sc. in Agricultural Engineering** | Universidad Nacional de Colombia | 2013
+
+## Honors & Awards
+
+- **Fulbright–Colciencias Fellowship** | 2019
+- **AI Fellowship** | Ministry of ICT, Colombia | 2019
+- **Hack the Risk! – Winning Team** | 2019
 
 ## Open Source Contributions
 
@@ -34,6 +41,6 @@ I am an active contributor to the open-source atmospheric science community, inc
 
 ## Contact Information
 
-- **Email**: aladino@illinois.edu
+- **Email**: alfonso8@illinois.edu
 - **GitHub**: [@aladinor](https://github.com/aladinor)
 - **ORCID**: [0000-0001-8081-7827](https://orcid.org/0000-0001-8081-7827)

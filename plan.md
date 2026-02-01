@@ -162,9 +162,6 @@ a:hover {
 ### xradar Contributions
 [Description of xradar work]
 
-### GPM Validation Networks
-[Description]
-
 ## Open Source Contributions
 
 - Python atmospheric science ecosystem
@@ -179,7 +176,6 @@ a:hover {
 ## 2024
 
 - ERAD 2024: Neural Networks for Precipitation Retrieval
-- SciPy 2024: FAIR Principles for Radar Data
 
 ## 2023
 
@@ -270,7 +266,6 @@ a:hover {
 2. **Project Descriptions** (for projects.md)
    - raw2zarr
    - xradar
-   - GPM validation
    - Other research projects
 
 3. **Talks/Presentations** (optional, for talks.md)

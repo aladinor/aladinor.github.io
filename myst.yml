@@ -1,0 +1,61 @@
+version: 1
+
+project:
+  title: Alfonso Ladino-Rincon
+  description: Academic website - Atmospheric Sciences, Radar Meteorology, Machine Learning
+  keywords: [radar meteorology, machine learning, open science, climate, weather, Python]
+  authors:
+    - name: Alfonso Ladino-Rincon
+      orcid: 0000-0001-8081-7827
+      github: aladinor
+      email: alfonso8@illinois.edu
+      affiliations:
+        - name: University of Illinois at Urbana-Champaign
+          department: CLiMAS
+          url: https://climas.illinois.edu/
+  github: https://github.com/aladinor/aladinor.github.io
+
+  # Table of contents - hierarchical navigation structure
+  toc:
+    - file: index.md
+      title: Welcome
+    - file: about.md
+      title: About me
+    - file: projects.md
+      title: Projects
+    - file: publications.md
+      title: Publications
+    - file: talks.md
+      title: Talks
+    - file: cv.md
+      title: CV
+    - file: blog.md
+      title: Blog
+      children:
+        - file: blog/2025-02-01-compartir-sin-perder-control.md
+        - file: blog/2025-01-20-poder-compartir-datos.md
+        - file: blog/2024-12-radar-scan-datasets.md
+        - file: blog/2024-11-fm-301-radar-interoperability.md
+        - file: blog/2024-10-untapped-promise-radar-data.md
+
+site:
+  template: book-theme
+  title: Alfonso Ladino-Rincon
+  options:
+    logo_text: Alfonso Ladino-Rincon
+    favicon: _static/profile.jpg
+    hide_toc: false
+    hide_outline: false
+  nav:
+    - title: About
+      url: /about
+    - title: Projects
+      url: /projects
+    - title: Publications
+      url: /publications
+    - title: Talks
+      url: /talks
+    - title: CV
+      url: /cv
+    - title: Blog
+      url: /blog

@@ -1,8 +1,11 @@
 ---
 date: 2024-12-01
 author: Alfonso Ladino-Rincon
-tags: radar, cloud-native, zarr, earthmover
-category: blog
+tags:
+  - radar
+  - cloud-native
+  - zarr
+  - earthmover
 ---
 
 # Radar Scan Datasets: Time-Aware Cloud-Native Data Access
@@ -33,7 +36,7 @@ By converting radar data to Zarr format with careful attention to chunk sizing a
 
 ## Key Design Principles
 
-The approach I've developed through `raw2zarr` focuses on:
+The approach I've developed through `radar-datatree` focuses on:
 
 - **Preserving metadata**: Maintaining all original radar metadata and quality flags
 - **Optimal chunking**: Balancing between query performance and storage efficiency
@@ -44,6 +47,6 @@ The approach I've developed through `raw2zarr` focuses on:
 
 ## Tools and Resources
 
-- [raw2zarr](https://github.com/aladinor/raw2zarr) - Python package for converting radar data to Zarr
+- [radar-datatree](https://github.com/aladinor/radar-datatree) - Python package for converting radar data to Zarr
 - [xradar](https://github.com/openradar/xradar) - Radar data toolkit for Python
 - Example notebooks demonstrating cloud-native radar workflows

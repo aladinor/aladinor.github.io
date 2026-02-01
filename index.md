@@ -1,3 +1,9 @@
+---
+site:
+  hide_toc: true
+  hide_outline: true
+---
+
 # Hi, I'm Alfonso Ladino-Rincon 👋
 
 ::::{grid} 1 1 2 2
@@ -34,7 +40,7 @@
 
 ::::
 
-I work extensively with [raw2zarr](https://github.com/aladinor/raw2zarr) for cloud-optimized radar data, contribute to [xradar](https://github.com/openradar/xradar) and the [Open Radar Science](https://openradarscience.org/) community, and develop tools for GPM validation networks.
+I work extensively with [radar-datatree](https://github.com/aladinor/radar-datatree) for cloud-optimized radar data, contribute to [xradar](https://github.com/openradar/xradar) and the [Open Radar Science](https://openradarscience.org/) community, and develop tools for GPM validation networks.
 
 ## Quick Links
 
@@ -70,12 +76,65 @@ Read about atmospheric science, open data, and technical workflows
 
 ## Recent blog posts
 
-```{postlist} 5
-:date: %B %d, %Y
-:format: {title}
-:excerpts:
-:list-style: none
-```
+::::{grid} 1 1 1 1
+:gutter: 2
+
+:::{grid-item-card} Compartir sin perder el control: cómo evitar la explotación de los datos abiertos
+:link: blog/2025-02-01-compartir-sin-perder-control
+:link-type: url
+:class-footer: sd-bg-primary sd-text-white
+
+Reflexiones sobre gobernanza de datos abiertos, equidad y el impacto de la inteligencia artificial en la circulación de datos públicos.
+
++++
+**February 01, 2025**
+:::
+
+:::{grid-item-card} El poder de compartir: convertir los datos públicos en bien público
+:link: blog/2025-01-20-poder-compartir-datos
+:link-type: url
+:class-footer: sd-bg-primary sd-text-white
+
+Reflexiones sobre datos climáticos abiertos en Colombia y el futuro de las redes de observación meteorológica.
+
++++
+**October 20, 2025**
+:::
+
+:::{grid-item-card} Radar Scan Datasets: Time-Aware Cloud-Native Data Access
+:link: blog/2024-12-radar-scan-datasets
+:link-type: url
+:class-footer: sd-bg-primary sd-text-white
+
+How time-aware, cloud-native approaches using Zarr can transform how we work with radar scan datasets.
+
++++
+**December 01, 2024**
+:::
+
+:::{grid-item-card} FM-301 and the Future of Radar Interoperability
+:link: blog/2024-11-fm-301-radar-interoperability
+:link-type: url
+:class-footer: sd-bg-primary sd-text-white
+
+The WMO FM-301 standard and the future of global radar data interoperability.
+
++++
+**November 15, 2024**
+:::
+
+:::{grid-item-card} The Untapped Promise of Weather Radar Data
+:link: blog/2024-10-untapped-promise-radar-data
+:link-type: url
+:class-footer: sd-bg-primary sd-text-white
+
+Weather radar networks represent one of the most valuable but underutilized sources of atmospheric observations.
+
++++
+**October 20, 2024**
+:::
+
+::::
 
 ## Get in Touch
 
@@ -85,15 +144,4 @@ I'm always interested in collaborating on atmospheric science projects, especial
 - Open science and cloud-optimized data workflows
 - Python tool development for the atmospheric science community
 
-Feel free to reach out via [email](mailto:aladino@illinois.edu) or connect with me on [GitHub](https://github.com/aladinor)!
-
-```{toctree}
-:hidden:
-:maxdepth: 2
-
-about
-projects
-publications
-talks
-blog
-```
+Feel free to reach out via [email](mailto:alfonso8@illinois.edu) or connect with me on [GitHub](https://github.com/aladinor)!

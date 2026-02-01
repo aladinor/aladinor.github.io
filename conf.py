@@ -38,9 +38,8 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_end": ["sphinx-version"],
 
-    # Remove right sidebar globally
-    "secondary_sidebar_items": [],
-    "show_toc_level": 1,
+    # Right sidebar (TOC) - enabled by default for all pages
+    "show_toc_level": 2,
 
     # GitHub and social links
     "github_url": "https://github.com/aladinor",
@@ -52,7 +51,7 @@ html_theme_options = {
         },
         {
             "name": "Email",
-            "url": "mailto:aladino@illinois.edu",
+            "url": "mailto:alfonso8@illinois.edu",
             "icon": "fa-solid fa-envelope",
         },
     ],
@@ -68,11 +67,16 @@ html_theme_options = {
 }
 
 html_sidebars = {
-    # Remove sidebars from all pages for clean layout
-    "**": [],
-    # Keep blog-specific sidebars only on blog pages
+    # Homepage only: no sidebars (landing page style)
+    "index": [],
+
+    # Blog pages: ABlog widgets on left sidebar
     "blog": ["ablog/tagcloud.html", "ablog/archives.html"],
-    "blog/**": ["ablog/postcard.html", "ablog/recentposts.html", "ablog/archives.html"],
+    "blog/**": ["ablog/recentposts.html", "ablog/archives.html"],
+
+    # All other pages use default theme sidebars:
+    # - Left sidebar: navigation tree
+    # - Right sidebar: page TOC (controlled by theme options)
 }
 
 # -- ABlog configuration -----------------------------------------------------

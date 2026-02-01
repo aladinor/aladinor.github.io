@@ -1,8 +1,12 @@
 ---
 date: 2025-10-20
 author: Alfonso Ladino-Rincon
-tags: open-data, climate, radar, colombia, public-good
-category: blog
+tags:
+  - open-data
+  - climate
+  - radar
+  - colombia
+  - public-good
 ---
 
 # El poder de compartir: convertir los datos públicos en bien público
@@ -15,12 +19,9 @@ width: 100%
 ---
 ```
 
-La semana pasada participé en el taller internacional “Expanding and Accelerating Global Climate Data Collaboration”, realizado en Hatfield Heath, Inglaterra. En un momento crítico para la ciencia del clima —cuando los modelos de financiamiento tradicionales enfrentan incertidumbre y la urgencia por actuar crece—, el encuentro reunió a expertos en infraestructura, investigadores y líderes institucionales para explorar nuevas formas de colaboración rápida en torno a los datos climáticos.
-
+La semana pasada participé en el taller internacional "Expanding and Accelerating Global Climate Data Collaboration", realizado en Hatfield Heath, Inglaterra. En un momento crítico para la ciencia del clima —cuando los modelos de financiamiento tradicionales enfrentan incertidumbre y la urgencia por actuar crece—, el encuentro reunió a expertos en infraestructura, investigadores y líderes institucionales para explorar nuevas formas de colaboración rápida en torno a los datos climáticos.
 
 Las discusiones abordaron cómo sostener plataformas de datos globales de forma creativa y realista, combinando ciencia, tecnología y nuevos modelos económicos. De esas reflexiones globales surgieron varias ideas que aquí llevo al contexto colombiano: fortalecer nuestra infraestructura de observación y, sobre todo, promover la circulación abierta de los datos.
-
-**Date:** October 20, 2025
 
 Cuando un país invierte en observar su atmósfera, no solo está comprando tecnología: está construyendo una mirada colectiva sobre su propio territorio. Los radares meteorológicos, los satélites y las estaciones hidrológicas nos permiten monitorear en tiempo real las condiciones de lluvia, desde su génesis hasta sus posibles impactos. Con esa información es posible anticipar crecidas, emitir alertas tempranas y advertir otros riesgos asociados a la precipitación. Estos instrumentos existen para proteger a las personas y guiar decisiones. Pero su verdadero poder depende de algo más que los sensores: depende de la circulación de los datos que producen.
 

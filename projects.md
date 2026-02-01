@@ -4,10 +4,10 @@ Here are some of the key research projects and open-source contributions I've be
 
 ## Research Projects
 
-### raw2zarr: Cloud-Optimized Weather Radar Data
+### radar-datatree: Cloud-Optimized Weather Radar Data
 
 ```{card}
-:link: https://github.com/aladinor/raw2zarr
+:link: https://github.com/aladinor/radar-datatree
 
 **Converting weather radar data to cloud-optimized Zarr format**
 
@@ -70,7 +70,6 @@ Active participant in the Open Radar Science community, contributing to:
 
 **Recent Activities:**
 - Co-organized ERAD 2024 Open Radar Science short course
-- Presented at SciPy 2024 on FAIR radar data workflows
 - Contributed to Project Pythia Radar Cookbook
 ```
 
@@ -131,4 +130,4 @@ I'm always interested in new collaborations! If you're working on:
 - Open science and FAIR data
 - Cloud-optimized data formats
 
-Feel free to reach out via [email](mailto:aladino@illinois.edu) or open an issue on [GitHub](https://github.com/aladinor)!
+Feel free to reach out via [email](mailto:alfonso8@illinois.edu) or open an issue on [GitHub](https://github.com/aladinor)!

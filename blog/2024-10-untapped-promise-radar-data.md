@@ -1,8 +1,11 @@
 ---
 date: 2024-10-20
 author: Alfonso Ladino-Rincon
-tags: radar, open-science, big-data, machine-learning
-category: blog
+tags:
+  - radar
+  - open-science
+  - big-data
+  - machine-learning
 ---
 
 # The Untapped Promise of Weather Radar Data
@@ -70,7 +73,7 @@ This isn't just a dream - the technology exists today.
 
 ## Making It Reality
 
-Through projects like `raw2zarr` and the Open Radar Science community, we're working to:
+Through projects like `radar-datatree` and the Open Radar Science community, we're working to:
 
 - Convert historical archives to cloud-optimized formats
 - Develop standardized processing workflows
@@ -94,4 +97,4 @@ The promise is enormous. The time to act is now.
 
 ---
 
-*Interested in contributing to open radar science? Check out the [Open Radar Science community](https://openradarscience.org/) or explore [raw2zarr](https://github.com/aladinor/raw2zarr) for cloud-optimized radar data workflows.*
+*Interested in contributing to open radar science? Check out the [Open Radar Science community](https://openradarscience.org/) or explore [radar-datatree](https://github.com/aladinor/radar-datatree) for cloud-optimized radar data workflows.*

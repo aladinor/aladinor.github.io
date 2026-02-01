@@ -1,0 +1,93 @@
+name: Test MyST Build
+
+on:
+  pull_request:
+    branches: ['**']
+  push:
+    branches: ['**']
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+      - 'LICENSE'
+  schedule:
+    # Run every Monday at 9:00 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    environment:
+      name: myst-preview
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install MyST
+        run: npm install -g mystmd
+
+      - name: Build MyST site
+        run: myst build --html
+
+      - name: Check build output
+        run: |
+          if [ ! -d "_build/html" ]; then
+            echo "Build failed: _build/html directory not found"
+            exit 1
+          fi
+          echo "✅ MyST build successful"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: myst-html-${{ github.run_id }}
+          path: _build/html
+          retention-days: 7
+
+      - name: Configure GitHub Pages (preview)
+        if: github.event_name == 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Upload preview artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _build/html
+
+      - name: Deploy preview
+        if: github.event_name == 'pull_request'
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          preview: true
+
+      - name: Publish preview link
+        if: github.event_name == 'pull_request'
+        run: |
+          {
+            echo "## Preview deployed"
+            echo ""
+            echo "- URL: ${{ steps.deployment.outputs.page_url }}"
+            echo "- Artifact: \`myst-html-${GITHUB_RUN_ID}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish build summary
+        if: always()
+        run: |
+          {
+            echo "## MyST build artifacts"
+            echo ""
+            echo "- Status: ✅ successful build"
+            echo "- Artifact: \`myst-html-${GITHUB_RUN_ID}\` (download to preview the generated site)"
+            echo "- Command: \`myst build --html\`"
+          } >> "$GITHUB_STEP_SUMMARY"
