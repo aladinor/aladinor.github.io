@@ -11,7 +11,7 @@ tags:
 
 # Compartir sin perder el control: cómo evitar la explotación de los datos abiertos
 
-```{figure} ../public/images/blog/data-governance-header.png
+```{figure} ../_static/images/blog/data-governance-header.png
 ---
 name: open-data-governance-header-2
 figclass: align-center
