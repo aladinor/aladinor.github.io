@@ -116,4 +116,4 @@ Es una inversión en confianza, sostenibilidad y justicia.
 
 ---
 
-*Esta reflexión surge a partir de la lectura del artículo ["The Weaponization of Open Data"](https://www.noemamag.com/the-weaponization-of-open-data/) y de conversaciones sobre el futuro de los datos abiertos y su gobernanza en el contexto de la inteligencia artificial.*
+*Esta reflexión surge a partir de la lectura del artículo ["The Weaponization of Open Data"](https://sverhulst.medium.com/the-weaponisation-of-openness-toward-a-new-social-contract-for-data-in-the-ai-era-fb9f49ef6109) y de conversaciones sobre el futuro de los datos abiertos y su gobernanza en el contexto de la inteligencia artificial.*
