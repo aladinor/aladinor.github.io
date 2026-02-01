@@ -79,6 +79,17 @@ Read about atmospheric science, open data, and technical workflows
 ::::{grid} 1 1 1 1
 :gutter: 2
 
+:::{grid-item-card} Compartir sin perder el control: cómo evitar la explotación de los datos abiertos
+:link: blog/2025-02-01-compartir-sin-perder-control
+:link-type: url
+:class-footer: sd-bg-primary sd-text-white
+
+Reflexiones sobre gobernanza de datos abiertos, equidad y el impacto de la inteligencia artificial en la circulación de datos públicos.
+
++++
+**February 01, 2025**
+:::
+
 :::{grid-item-card} El poder de compartir: convertir los datos públicos en bien público
 :link: blog/2025-01-20-poder-compartir-datos
 :link-type: url

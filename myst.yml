@@ -32,6 +32,7 @@ project:
     - file: blog.md
       title: Blog
       children:
+        - file: blog/2025-02-01-compartir-sin-perder-control.md
         - file: blog/2025-01-20-poder-compartir-datos.md
         - file: blog/2024-12-radar-scan-datasets.md
         - file: blog/2024-11-fm-301-radar-interoperability.md
