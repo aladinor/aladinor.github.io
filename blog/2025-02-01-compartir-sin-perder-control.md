@@ -11,6 +11,14 @@ tags:
 
 # Compartir sin perder el control: cómo evitar la explotación de los datos abiertos
 
+```{figure} /_static/images/blog/open-data-governance.png
+---
+name: open-data-governance-header-2
+figclass: align-center
+width: 100%
+---
+```
+
 Durante la última década, los datos abiertos se convirtieron en una de las ideas más poderosas de la política pública moderna. Gobiernos de todo el mundo comenzaron a compartir información con una convicción simple pero profunda: cuando los datos se abren, el conocimiento crece, la ciencia avanza y las decisiones públicas mejoran. Abrir datos fue, y sigue siendo, una forma concreta de cuidado colectivo.
 
 Esa intuición fue correcta.
