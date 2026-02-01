@@ -11,7 +11,7 @@ tags:
 
 # El poder de compartir: convertir los datos públicos en bien público
 
-```{figure} /images/blog/data-governance-header.png
+```{figure} ../public/images/blog/header.svg
 ---
 name: open-data-governance-header
 figclass: align-center
