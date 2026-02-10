@@ -18,6 +18,10 @@ PhD candidate in atmospheric sciences specializing in:
 
 ## Work Experience
 
+**Research & Development Intern** | Silurian AI | 2026–Present
+- Contributing to AI-driven weather and climate modeling research
+- Developing and optimizing machine learning pipelines for atmospheric prediction
+
 **Data Science Intern** | Earthmover PBC | May–August 2025
 - Developed analysis-ready, cloud-optimized (ARCO) datasets for meteorological data products
 - Focused on improving radar data accessibility and usability
@@ -31,7 +35,8 @@ PhD candidate in atmospheric sciences specializing in:
 
 ## Education
 
-- **Ph.D. in Atmospheric Sciences** | University of Illinois at Urbana-Champaign | 2020–2025 (Expected)
+- **Ph.D. in Atmospheric Sciences** | University of Illinois at Urbana-Champaign | 2020–July 2026 (Expected)
+- **Exchange Program** | University of Oklahoma | Spring 2016
 - **M.Sc. in Meteorology** | Universidad Nacional de Colombia | 2018
 - **B.Sc. in Agricultural Engineering** | Universidad Nacional de Colombia | 2013
 
@@ -41,7 +46,7 @@ PhD candidate in atmospheric sciences specializing in:
 
 **Data Science:** Pandas, Xarray, SQL, VirtualiZarr, Kerchunk | PyTorch, TensorFlow, Scikit-learn
 
-**Workflows:** HPC (Dask, Slurm) | Data versioning (Icechunk) | CI/CD (GitHub Actions, pre-commit) | Cloud (AWS S3, Coiled)
+**Workflows:** HPC (Dask, Slurm) | Data versioning (Icechunk) | CI/CD (GitHub Actions, pre-commit) | Cloud (AWS S3, Coiled) | AI-assisted code (Codex, Claude Code)
 
 **Data Formats:** Zarr, NetCDF, HDF5, GRIB, Parquet | ARCO principles
 

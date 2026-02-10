@@ -15,7 +15,8 @@ My work combines traditional atmospheric science with modern computational metho
 
 ## Education
 
-- **Ph.D. in Atmospheric Sciences** | University of Illinois at Urbana-Champaign | 2020–2025 (Expected)
+- **Ph.D. in Atmospheric Sciences** | University of Illinois at Urbana-Champaign | 2020–July 2026 (Expected)
+- **Exchange Program** | University of Oklahoma | Spring 2016
 - **M.Sc. in Meteorology** | Universidad Nacional de Colombia | 2018
 - **B.Sc. in Agricultural Engineering** | Universidad Nacional de Colombia | 2013
 

@@ -2,6 +2,21 @@
 
 A selection of my conference presentations, workshops, and invited talks on radar meteorology, open science, and machine learning for atmospheric sciences.
 
+## 2026
+
+### AMS Annual Meeting 2026: Radar DataTree
+**106th AMS Annual Meeting | January 2026 | Houston, TX**
+
+```{card}
+**Oral presentation**
+
+Radar DataTree: A Cloud-Native Data Model for Accessible, Time-Aware Weather Radar Collections
+- Cloud-native data model for weather radar archives
+- FAIR and scalable framework for radar data access
+- Time-aware collection management
+- Applications for operational and research workflows
+```
+
 ## 2025
 
 ### CARLA 2025: Analysis-Ready, Cloud-Optimized Data Formats
@@ -145,6 +160,15 @@ Lead instructor and contributor for a hands-on tutorial on radar science using F
 DOI: [10.5281/zenodo.13694510](https://doi.org/10.5281/zenodo.13694510)
 ```
 
+### II Simposio ATMOSCOL 2025: Piensa en Nubes, Programa en Python
+**2025 | Colombia**
+
+```{card}
+**Instructor**
+
+Workshop on cloud and atmospheric science programming with Python for the Colombian atmospheric science community.
+```
+
 ### AtmosCol 2023: Scientific Data with Python and R
 **November 2023 | Colombia**
 
@@ -179,17 +203,6 @@ Regular presentations to the department seminar series on:
 - Literature reviews
 - Tool demonstrations
 - Career development topics
-```
-
-## Upcoming & Planned
-
-### AMS Annual Meeting 2025
-**American Meteorological Society | January 2025 | New Orleans, LA**
-
-```{card}
-**Abstract submitted**
-
-Planned presentation on machine learning approaches for precipitation microphysics retrieval.
 ```
 
 ## Session Chair & Organization

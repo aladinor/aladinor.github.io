@@ -4,6 +4,10 @@ My research publications focus on radar meteorology, cloud physics, machine lear
 
 ## Journal Articles
 
+### Preprints
+
+**Ladino-Rincon, A.**, & Nesbitt, S.W., *Radar DataTree: A FAIR and Cloud-Native Framework for Scalable Weather Radar Archives*, arXiv preprint, arXiv:2510.24943. DOI: [10.48550/arXiv.2510.24943](https://doi.org/10.48550/arXiv.2510.24943)
+
 ### 2025
 
 **Ladino-Rincon, A.**, S. W. Nesbitt, L. Di Girolamo, R. M. Rauber, G. M. McFarquhar, and R. P. Lawson, *Droplet Size Distribution Retrieval from Dual-Frequency Precipitation Radar Measurement Using a Deep Neural Network*, Journal of Atmospheric and Oceanic Technology, 42, 1549–1566. DOI: [10.1175/JTECH-D-25-0004.1](https://doi.org/10.1175/JTECH-D-25-0004.1)

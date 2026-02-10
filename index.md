@@ -98,7 +98,7 @@ Reflexiones sobre gobernanza de datos abiertos, equidad y el impacto de la intel
 Reflexiones sobre datos climáticos abiertos en Colombia y el futuro de las redes de observación meteorológica.
 
 +++
-**October 20, 2025**
+**January 20, 2025**
 :::
 
 :::{grid-item-card} Radar Scan Datasets: Time-Aware Cloud-Native Data Access
